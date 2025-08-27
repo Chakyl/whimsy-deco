@@ -1,0 +1,51 @@
+{
+	"format_version": "1.21.6",
+	"credit": "Made with Blockbench",
+	"render_type": "minecraft:cutout",
+	"texture_size": [32, 32],
+	"textures": {
+		"0": "whimsy_deco:block/froggy_chair",
+		"particle": "whimsy_deco:block/froggy_chair"
+	},
+	"elements": [
+		{
+			"from": [2, 0, 13],
+			"to": [14, 6, 15],
+			"rotation": {"angle": 0, "axis": "y", "origin": [2, -6, 13]},
+			"faces": {
+				"north": {"uv": [7.5, 0, 13.5, 3], "texture": "#0"},
+				"east": {"uv": [6.5, 0, 5.5, 3], "texture": "#0"},
+				"south": {"uv": [0, 6, 6, 9], "texture": "#0"},
+				"west": {"uv": [5.5, 0.5, 6.5, 3.5], "texture": "#0"},
+				"up": {"uv": [0.5, 6, 6.5, 7], "texture": "#0"},
+				"down": {"uv": [0, 0, 6, 1], "texture": "#0"}
+			}
+		},
+		{
+			"from": [0, 3, 13],
+			"to": [5, 8, 15],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 6, 13]},
+			"faces": {
+				"north": {"uv": [13.5, 0, 16, 2.5], "texture": "#0"},
+				"east": {"uv": [0, 0, 1, 2.5], "texture": "#0"},
+				"south": {"uv": [16, 2.5, 13.5, 5], "texture": "#0"},
+				"west": {"uv": [5.5, 0, 6.5, 2.5], "texture": "#0"},
+				"up": {"uv": [0, 0, 2.5, 1], "texture": "#0"},
+				"down": {"uv": [0, 0, 2.5, 1], "texture": "#0"}
+			}
+		},
+		{
+			"from": [11, 3, 13],
+			"to": [16, 8, 15],
+			"rotation": {"angle": 0, "axis": "y", "origin": [11, 6, 13]},
+			"faces": {
+				"north": {"uv": [16, 0, 13.5, 2.5], "texture": "#0"},
+				"east": {"uv": [6.5, 0, 5.5, 2.5], "texture": "#0"},
+				"south": {"uv": [13.5, 2.5, 16, 5], "texture": "#0"},
+				"west": {"uv": [0, 0, 1, 2.5], "texture": "#0"},
+				"up": {"uv": [2.5, 0, 0, 1], "texture": "#0"},
+				"down": {"uv": [0, 0, 2.5, 1], "texture": "#0"}
+			}
+		}
+	]
+}

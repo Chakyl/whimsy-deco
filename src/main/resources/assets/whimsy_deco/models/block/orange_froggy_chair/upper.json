@@ -1,0 +1,7 @@
+{
+  "parent": "whimsy_deco:block/froggy_chair/upper",
+  "textures": {
+    "0": "whimsy_deco:block/froggy_chair_orange",
+    "particle": "whimsy_deco:block/froggy_chair_orange"
+  }
+}

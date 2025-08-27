@@ -1,0 +1,7 @@
+{
+  "parent": "whimsy_deco:block/blue_toy_plane",
+  "textures": {
+    "0": "whimsy_deco:block/toy_plane_red",
+    "particle": "whimsy_deco:block/toy_plane_red"
+  }
+}

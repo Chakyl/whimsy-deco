@@ -1,0 +1,36 @@
+{
+  "multipart": [
+    {
+      "when": { "AND": [ { "flying": false }, { "facing": "north" } ] },
+      "apply": { "model": "whimsy_deco:block/red_toy_plane" }
+    },
+    {
+      "when": { "AND": [ { "flying": true }, { "facing": "north" } ] },
+      "apply": { "model": "whimsy_deco:block/red_toy_plane_fly" }
+    },
+    {
+      "when": { "AND": [ { "flying": false }, { "facing": "south" } ] },
+      "apply": { "model": "whimsy_deco:block/red_toy_plane", "y": 180 }
+    },
+    {
+      "when": { "AND": [ { "flying": true }, { "facing": "south" } ] },
+      "apply": { "model": "whimsy_deco:block/red_toy_plane_fly", "y": 180 }
+    },
+    {
+      "when": { "AND": [ { "flying": false }, { "facing": "east" } ] },
+      "apply": { "model": "whimsy_deco:block/red_toy_plane", "y": 90 }
+    },
+    {
+      "when": { "AND": [ { "flying": true }, { "facing": "east" } ] },
+      "apply": { "model": "whimsy_deco:block/red_toy_plane_fly", "y": 90 }
+    },
+    {
+      "when": { "AND": [ { "flying": false }, { "facing": "west" } ] },
+      "apply": { "model": "whimsy_deco:block/red_toy_plane", "y": 270 }
+    },
+    {
+      "when": { "AND": [ { "flying": true }, { "facing": "west" } ] },
+      "apply": { "model": "whimsy_deco:block/red_toy_plane_fly", "y": 270 }
+    }
+  ]
+}

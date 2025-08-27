@@ -1,0 +1,7 @@
+{
+  "parent": "whimsy_deco:block/black_atm/lower",
+  "textures": {
+    "3": "whimsy_deco:block/atm_red",
+    "particle": "whimsy_deco:block/atm_red"
+  }
+}
