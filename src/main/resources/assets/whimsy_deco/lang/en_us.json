@@ -2,14 +2,37 @@
   "itemGroup.whimsy_deco": "Whimsy Deco",
   "itemGroup.whimsy_deco.creative_tab": "Whimsy Deco",
 
-  "block.whimsy_deco.blue_toy_plane": "Blue Toy Plane",
+  "block.whimsy_deco.fufu_plushie": "Fufu Plushies",
+  "block.whimsy_deco.flower_pig_plushie": "Flower Pig Plushie",
+  "block.whimsy_deco.golden_pig_plushie": "Golden Pig Plushie",
+  "block.whimsy_deco.big_panda_plushie": "Big Panda Plushie",
+  "block.whimsy_deco.vocal_doll": "Vocal Doll",
 
-  "entity.whimsy_deco.paw_carpet_entity": "Paw Carpet",
-  "block.whimsy_deco.adv_fufu_plushie": "Fufu Plushie",
-  "block.whimsy_deco.adv_flower_pig_plushie": "Flower Pig Plushie",
-  "block.whimsy_deco.adv_golden_pig_plushie": "Golden Pig Plushie",
-  "block.whimsy_deco.adv_big_panda_plushie": "Big Panda Plushie",
-  "block.whimsy_deco.adv_singing_frog_plushie": "Singing Frog Plushie",
-  "block.whimsy_deco.adv_vocal_doll": "Vocal Doll",
-  "block.whimsy_deco.gatcha_machine": "Plushie Machine"
+  "block.whimsy_deco.green_atm": "Green ATM",
+  "block.whimsy_deco.yellow_atm": "Yellow ATM",
+  "block.whimsy_deco.red_atm": "Red ATM",
+  "block.whimsy_deco.blue_atm": "Blue ATM",
+  "block.whimsy_deco.black_atm": "Black ATM",
+
+
+  "block.whimsy_deco.gatcha_machine": "Gatcha Machine",
+
+  "block.whimsy_deco.froggy_chair": "Froggy Chair",
+  "block.whimsy_deco.yellow_froggy_chair": "Yellow Froggy Chair",
+  "block.whimsy_deco.pink_froggy_chair": "Pink Froggy Chair",
+  "block.whimsy_deco.orange_froggy_chair": "Orange Froggy Chair",
+  "block.whimsy_deco.blue_froggy_chair": "Blue Froggy Chair",
+
+  "block.whimsy_deco.phone": "Phone",
+  "block.whimsy_deco.black_phone": "Black Phone",
+  "block.whimsy_deco.red_phone": " Red Phone",
+  "block.whimsy_deco.blue_phone": "Blue Phone",
+
+  "block.whimsy_deco.yellow_toy_plane": "Toy Plane",
+  "block.whimsy_deco.red_toy_plane": "Toy Plane",
+  "block.whimsy_deco.blue_toy_plane": " Toy Plane",
+
+  "block.whimsy_deco.lucky_cat": "Lucky Cat",
+  "block.whimsy_deco.golden_lucky_cat": "Golden Lucky Cat",
+  "block.whimsy_deco.singing_frog": "Singing Frog"
 }

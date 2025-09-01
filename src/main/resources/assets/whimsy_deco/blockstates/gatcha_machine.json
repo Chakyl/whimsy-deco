@@ -2,35 +2,35 @@
   "multipart": [
     {
       "when": { "AND": [ { "half": "upper" }, { "facing": "north" } ] },
-      "apply": { "model": "whimsy_deco:block/gatchapon_machine/upper" }
+      "apply": { "model": "whimsy_deco:block/gatcha_machine/upper" }
     },
     {
       "when": { "AND": [ { "half": "lower" }, { "facing": "north" } ] },
-      "apply": { "model": "whimsy_deco:block/gatchapon_machine/lower" }
+      "apply": { "model": "whimsy_deco:block/gatcha_machine/lower" }
     },
     {
       "when": { "AND": [ { "half": "upper" }, { "facing": "south" } ] },
-      "apply": { "model": "whimsy_deco:block/gatchapon_machine/upper", "y": 180 }
+      "apply": { "model": "whimsy_deco:block/gatcha_machine/upper", "y": 180 }
     },
     {
       "when": { "AND": [ { "half": "lower" }, { "facing": "south" } ] },
-      "apply": { "model": "whimsy_deco:block/gatchapon_machine/lower", "y": 180 }
+      "apply": { "model": "whimsy_deco:block/gatcha_machine/lower", "y": 180 }
     },
     {
       "when": { "AND": [ { "half": "upper" }, { "facing": "east" } ] },
-      "apply": { "model": "whimsy_deco:block/gatchapon_machine/upper", "y": 90 }
+      "apply": { "model": "whimsy_deco:block/gatcha_machine/upper", "y": 90 }
     },
     {
       "when": { "AND": [ { "half": "lower" }, { "facing": "east" } ] },
-      "apply": { "model": "whimsy_deco:block/gatchapon_machine/lower", "y": 90 }
+      "apply": { "model": "whimsy_deco:block/gatcha_machine/lower", "y": 90 }
     },
     {
       "when": { "AND": [ { "half": "upper" }, { "facing": "west" } ] },
-      "apply": { "model": "whimsy_deco:block/gatchapon_machine/upper", "y": 270 }
+      "apply": { "model": "whimsy_deco:block/gatcha_machine/upper", "y": 270 }
     },
     {
       "when": { "AND": [ { "half": "lower" }, { "facing": "west" } ] },
-      "apply": { "model": "whimsy_deco:block/gatchapon_machine/lower", "y": 270 }
+      "apply": { "model": "whimsy_deco:block/gatcha_machine/lower", "y": 270 }
     }
   ]
 }

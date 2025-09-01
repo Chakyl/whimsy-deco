@@ -1,0 +1,36 @@
+{
+  "multipart": [
+    {
+      "when": { "AND": [ { "wall": true }, { "facing": "north" } ] },
+      "apply": { "model": "whimsy_deco:block/phone", "x": 90  }
+    },
+    {
+      "when": { "AND": [ { "wall": false }, { "facing": "north" } ] },
+      "apply": { "model": "whimsy_deco:block/phone" }
+    },
+    {
+      "when": { "AND": [ { "wall": true }, { "facing": "south" } ] },
+      "apply": { "model": "whimsy_deco:block/phone", "y": 180, "x": 90  }
+    },
+    {
+      "when": { "AND": [ { "wall": false }, { "facing": "south" } ] },
+      "apply": { "model": "whimsy_deco:block/phone", "y": 180 }
+    },
+    {
+      "when": { "AND": [ { "wall": true }, { "facing": "east" } ] },
+      "apply": { "model": "whimsy_deco:block/phone", "y": 90, "x": 90 }
+    },
+    {
+      "when": { "AND": [ { "wall": false }, { "facing": "east" } ] },
+      "apply": { "model": "whimsy_deco:block/phone", "y": 90 }
+    },
+    {
+      "when": { "AND": [ { "wall": true }, { "facing": "west" } ] },
+      "apply": { "model": "whimsy_deco:block/phone", "y": 270, "x": 90 }
+    },
+    {
+      "when": { "AND": [ { "wall": false }, { "facing": "west" } ] },
+      "apply": { "model": "whimsy_deco:block/phone", "y": 270 }
+    }
+  ]
+}

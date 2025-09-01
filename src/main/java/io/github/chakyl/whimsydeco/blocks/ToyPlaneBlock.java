@@ -38,7 +38,6 @@ public class ToyPlaneBlock extends RotatingBlock {
         };
     }
 
-
     @Override
     public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
         pLevel.setBlockAndUpdate(pPos, pState.setValue(FLYING, !pState.getValue(FLYING)));

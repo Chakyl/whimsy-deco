@@ -74,8 +74,17 @@ public final class WhimsyRegistry {
                 new FroggyChairBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.METAL).noOcclusion().strength(1.5F, 6.0F)));
 
         // Gatcha Machine
-        public static final RegistryObject<Block> GATCHAPON_MACHINE = registerWithItem("gatchapon_machine", () ->
+        public static final RegistryObject<Block> GATCHA_MACHINE = registerWithItem("gatcha_machine", () ->
                 new GachaponMachineBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.METAL).noOcclusion().strength(1.5F, 6.0F)));
+        // Phone
+        public static final RegistryObject<Block> PHONE = registerWithItem("phone", () ->
+                new PhoneBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.METAL).noOcclusion().strength(1.5F, 6.0F)));
+        public static final RegistryObject<Block> BLACK_PHONE = registerWithItem("black_phone", () ->
+                new PhoneBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.METAL).noOcclusion().strength(1.5F, 6.0F)));
+        public static final RegistryObject<Block> RED_PHONE = registerWithItem("red_phone", () ->
+                new PhoneBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.METAL).noOcclusion().strength(1.5F, 6.0F)));
+        public static final RegistryObject<Block> BLUE_PHONE = registerWithItem("blue_phone", () ->
+                new PhoneBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.METAL).noOcclusion().strength(1.5F, 6.0F)));
 
         // Toy Plane
         public static final RegistryObject<Block> YELLOW_TOY_PLANE = registerWithItem("yellow_toy_plane", () ->
