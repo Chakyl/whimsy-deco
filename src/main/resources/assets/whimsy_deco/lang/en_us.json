@@ -7,6 +7,7 @@
   "block.whimsy_deco.golden_pig_plushie": "Golden Pig Plushie",
   "block.whimsy_deco.big_panda_plushie": "Big Panda Plushie",
   "block.whimsy_deco.vocal_doll": "Vocal Doll",
+  "block.whimsy_deco.red_vocal_doll": "Red Vocal Doll",
 
   "block.whimsy_deco.green_atm": "Green ATM",
   "block.whimsy_deco.yellow_atm": "Yellow ATM",
@@ -14,6 +15,11 @@
   "block.whimsy_deco.blue_atm": "Blue ATM",
   "block.whimsy_deco.black_atm": "Black ATM",
 
+  "block.whimsy_deco.horseshoe": "Horseshoe",
+  "block.whimsy_deco.golden_horseshoe": "Golden Horseshoe",
+  "block.whimsy_deco.dartboard": "Dartboard",
+  "block.whimsy_deco.caution_floor_sign": "Caution Floor Sign",
+  "block.whimsy_deco.washing_machine": "Washing Machine",
 
   "block.whimsy_deco.gatcha_machine": "Gatcha Machine",
 

@@ -3,11 +3,11 @@ package io.github.chakyl.whimsydeco.blocks;
 import io.github.chakyl.whimsydeco.blocks.bases.RotatingBlock;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
-public class PlushieBlock extends RotatingBlock {
+public class WashingMachineBlock extends RotatingBlock {
 
-    public static final VoxelShape SHAPE =  box(4, 0, 4, 12, 11, 12);
+    public static final VoxelShape SHAPE =  box(0, 0, 0, 16, 16, 16);
 
-    public PlushieBlock(Properties props) {
+    public WashingMachineBlock(Properties props) {
         super(props, RotatingBlock.createShapeBuilder(SHAPE));
     }
 

@@ -5,6 +5,7 @@ import io.github.chakyl.whimsydeco.WhimsyDeco;
 import io.github.chakyl.whimsydeco.blocks.*;
 import io.github.chakyl.whimsydeco.blocks.PigPlushieBlock;
 import io.github.chakyl.whimsydeco.blocks.PlushieBlock;
+import io.github.chakyl.whimsydeco.blocks.bases.RotatingBlock;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -61,6 +62,14 @@ public final class WhimsyRegistry {
         public static final RegistryObject<Block> BLUE_ATM = registerWithItem("blue_atm", () ->
                 new ATMBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.METAL).noOcclusion().strength(1.5F, 6.0F)));
 
+        // Floor Sign
+        public static final RegistryObject<Block> CAUTION_FLOOR_SIGN = registerWithItem("caution_floor_sign", () ->
+                new FloorSignBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.METAL).noOcclusion().strength(1.5F, 6.0F)));
+
+        // Dartboard
+        public static final RegistryObject<Block> DARTBOARD = registerWithItem("dartboard", () ->
+                new DartboardBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.METAL).noOcclusion().strength(1.5F, 6.0F)));
+
         // Froggy Chair
         public static final RegistryObject<Block> FROGGY_CHAIR = registerWithItem("froggy_chair", () ->
                 new FroggyChairBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.METAL).noOcclusion().strength(1.5F, 6.0F)));
@@ -73,9 +82,17 @@ public final class WhimsyRegistry {
         public static final RegistryObject<Block> BLUE_FROGGY_CHAIR = registerWithItem("blue_froggy_chair", () ->
                 new FroggyChairBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.METAL).noOcclusion().strength(1.5F, 6.0F)));
 
+
         // Gatcha Machine
         public static final RegistryObject<Block> GATCHA_MACHINE = registerWithItem("gatcha_machine", () ->
                 new GachaponMachineBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.METAL).noOcclusion().strength(1.5F, 6.0F)));
+
+        // Horseshoe
+        public static final RegistryObject<Block> HORSESHOE = registerWithItem("horseshoe", () ->
+                new HorseshoeBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.METAL).noOcclusion().strength(1.5F, 6.0F)));
+        public static final RegistryObject<Block> GOLDEN_HORSESHOE = registerWithItem("golden_horseshoe", () ->
+                new HorseshoeBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.METAL).noOcclusion().strength(1.5F, 6.0F)));
+
         // Phone
         public static final RegistryObject<Block> PHONE = registerWithItem("phone", () ->
                 new PhoneBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.METAL).noOcclusion().strength(1.5F, 6.0F)));
@@ -94,6 +111,10 @@ public final class WhimsyRegistry {
         public static final RegistryObject<Block> BLUE_TOY_PLANE = registerWithItem("blue_toy_plane", () ->
                 new ToyPlaneBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.METAL).noOcclusion().strength(1.5F, 6.0F)));
 
+        // Washing Machine
+        public static final RegistryObject<Block> WASHING_MACHINE = registerWithItem("washing_machine", () ->
+                new WashingMachineBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.METAL).noOcclusion().strength(1.5F, 6.0F)));
+
         // Plushies
         public static final RegistryObject<Block> BIG_PANDA_PLUSHIE = registerWithItem("big_panda_plushie", () ->
                 new BigPandaBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.METAL).noOcclusion().strength(1.5F, 6.0F)));
@@ -104,6 +125,8 @@ public final class WhimsyRegistry {
         public static final RegistryObject<Block> GOLDEN_PIG_PLUSHIE = registerWithItem("golden_pig_plushie", () ->
                 new PigPlushieBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.METAL).noOcclusion().strength(1.5F, 6.0F)));
         public static final RegistryObject<Block> VOCAL_DOLL = registerWithItem("vocal_doll", () ->
+                new PlushieBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.METAL).noOcclusion().strength(1.5F, 6.0F)));
+        public static final RegistryObject<Block> RED_VOCAL_DOLL = registerWithItem("red_vocal_doll", () ->
                 new PlushieBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.METAL).noOcclusion().strength(1.5F, 6.0F)));
 
 
