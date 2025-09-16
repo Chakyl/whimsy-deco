@@ -1,0 +1,20 @@
+{
+  "multipart": [
+    {
+      "when":  { "facing": "north" },
+      "apply": { "model": "whimsy_deco:block/black_swan_swimming_ring" }
+    },
+    {
+      "when":  { "facing": "south" },
+      "apply": { "model": "whimsy_deco:block/black_swan_swimming_ring", "y": 180 }
+    },
+    {
+      "when":  { "facing": "east" },
+      "apply": { "model": "whimsy_deco:block/black_swan_swimming_ring", "y": 90 }
+    },
+    {
+      "when":  { "facing": "west" },
+      "apply": { "model": "whimsy_deco:block/black_swan_swimming_ring", "y": 270 }
+    }
+  ]
+}

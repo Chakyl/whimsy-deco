@@ -1,0 +1,7 @@
+{
+  "parent": "whimsy_deco:block/vine_rattan_chair/lower",
+	"textures": {
+		"1": "whimsy_deco:block/rattan_chair_warped",
+		"particle": "whimsy_deco:block/rattan_chair_warped"
+	}
+}

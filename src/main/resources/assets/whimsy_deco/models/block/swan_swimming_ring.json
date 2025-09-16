@@ -1,0 +1,7 @@
+{
+  "parent": "whimsy_deco:block/flamingo_swimming_ring",
+  "textures": {
+    "0": "whimsy_deco:block/swimming_ring_swan",
+    "particle": "whimsy_deco:block/swimming_ring_swan"
+  }
+}

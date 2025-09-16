@@ -1,0 +1,7 @@
+{
+	"parent": "whimsy_deco:block/red_lawn_mower",
+	"textures": {
+		"0": "whimsy_deco:block/lawn_mower_orange",
+		"particle": "whimsy_deco:block/lawn_mower_orange"
+	}
+}

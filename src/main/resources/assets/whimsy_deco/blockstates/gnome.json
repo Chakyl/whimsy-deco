@@ -1,0 +1,68 @@
+{
+  "multipart": [
+    {
+      "when": { "AND": [ { "type": 0 }, { "facing": "north" } ] },
+      "apply": { "model": "whimsy_deco:block/gnome/display" }
+    },
+    {
+      "when": { "AND": [ { "type": 1 }, { "facing": "north" } ] },
+      "apply": { "model": "whimsy_deco:block/gnome/twig" }
+    },
+    {
+      "when": { "AND": [ { "type": 2 }, { "facing": "north" } ] },
+      "apply": { "model": "whimsy_deco:block/gnome/fish" }
+    },
+    {
+      "when": { "AND": [ { "type": 3 }, { "facing": "north" } ] },
+      "apply": { "model": "whimsy_deco:block/gnome/swing" }
+    },
+    {
+      "when": { "AND": [ { "type": 0 }, { "facing": "south" } ] },
+      "apply": { "model": "whimsy_deco:block/gnome/display", "y": 180 }
+    },
+    {
+      "when": { "AND": [ { "type": 1 }, { "facing": "south" } ] },
+      "apply": { "model": "whimsy_deco:block/gnome/twig", "y": 180 }
+    },
+    {
+      "when": { "AND": [ { "type": 2 }, { "facing": "south" } ] },
+      "apply": { "model": "whimsy_deco:block/gnome/fish", "y": 180 }
+    },
+    {
+      "when": { "AND": [ { "type": 3 }, { "facing": "south" } ] },
+      "apply": { "model": "whimsy_deco:block/gnome/swing", "y": 180 }
+    },
+    {
+      "when": { "AND": [ { "type": 0 }, { "facing": "east" } ] },
+      "apply": { "model": "whimsy_deco:block/gnome/display", "y": 90 }
+    },
+    {
+      "when": { "AND": [ { "type": 1 }, { "facing": "east" } ] },
+      "apply": { "model": "whimsy_deco:block/gnome/twig", "y": 90 }
+    },
+    {
+      "when": { "AND": [ { "type": 2 }, { "facing": "east" } ] },
+      "apply": { "model": "whimsy_deco:block/gnome/fish", "y": 90 }
+    },
+    {
+      "when": { "AND": [ { "type": 3 }, { "facing": "east" } ] },
+      "apply": { "model": "whimsy_deco:block/gnome/swing", "y": 90 }
+    },
+    {
+      "when": { "AND": [ { "type": 0 }, { "facing": "west" } ] },
+      "apply": { "model": "whimsy_deco:block/gnome/display", "y": 270 }
+    },
+    {
+      "when": { "AND": [ { "type": 1 }, { "facing": "west" } ] },
+      "apply": { "model": "whimsy_deco:block/gnome/twig", "y": 270 }
+    },
+    {
+      "when": { "AND": [ { "type": 2 }, { "facing": "west" } ] },
+      "apply": { "model": "whimsy_deco:block/gnome/fish", "y": 270 }
+    },
+    {
+      "when": { "AND": [ { "type": 3 }, { "facing": "west" } ] },
+      "apply": { "model": "whimsy_deco:block/gnome/swing", "y": 270 }
+    }
+  ]
+}

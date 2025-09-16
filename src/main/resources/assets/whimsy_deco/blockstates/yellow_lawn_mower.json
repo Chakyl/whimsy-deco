@@ -1,0 +1,20 @@
+{
+  "multipart": [
+    {
+      "when":  { "facing": "north" },
+      "apply": { "model": "whimsy_deco:block/yellow_lawn_mower" }
+    },
+    {
+      "when":  { "facing": "south" },
+      "apply": { "model": "whimsy_deco:block/yellow_lawn_mower", "y": 180 }
+    },
+    {
+      "when":  { "facing": "east" },
+      "apply": { "model": "whimsy_deco:block/yellow_lawn_mower", "y": 90 }
+    },
+    {
+      "when":  { "facing": "west" },
+      "apply": { "model": "whimsy_deco:block/yellow_lawn_mower", "y": 270 }
+    }
+  ]
+}

@@ -1,10 +1,9 @@
 {
-	"format_version": "1.21.6",
-	"credit": "Made with Blockbench",
+	"render_type": "minecraft:cutout",
 	"texture_size": [64, 64],
 	"textures": {
-		"5": "paperlanterndarkwood",
-		"particle": "paperlanternblue"
+		"5": "whimsy_deco:block/paper_lantern",
+		"particle": "whimsy_deco:block/paper_lantern"
 	},
 	"elements": [
 		{
@@ -21,9 +20,9 @@
 			}
 		},
 		{
-			"from": [4, 0, 4],
-			"to": [12, 1, 12],
-			"rotation": {"angle": 0, "axis": "y", "origin": [9, -1, 5]},
+			"from": [4, -0.01, 4],
+			"to": [12, 0.99, 12],
+			"rotation": {"angle": 0, "axis": "y", "origin": [9, -1.01, 5]},
 			"faces": {
 				"north": {"uv": [8, 4, 12, 4.5], "texture": "#5"},
 				"east": {"uv": [8, 4, 12, 4.5], "texture": "#5"},

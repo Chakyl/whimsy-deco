@@ -26,7 +26,6 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         itemModel(WhimsyRegistry.BlockReg.DARTBOARD);
 
-        itemModelDisplay(WhimsyRegistry.BlockReg.GATCHA_MACHINE);
 
         itemModelDisplay(WhimsyRegistry.BlockReg.FROGGY_CHAIR);
         itemModelDisplay(WhimsyRegistry.BlockReg.YELLOW_FROGGY_CHAIR);
@@ -34,13 +33,39 @@ public class ModItemModelProvider extends ItemModelProvider {
         itemModelDisplay(WhimsyRegistry.BlockReg.ORANGE_FROGGY_CHAIR);
         itemModelDisplay(WhimsyRegistry.BlockReg.BLUE_FROGGY_CHAIR);
 
+        itemModelDisplay(WhimsyRegistry.BlockReg.GATCHA_MACHINE);
+
+        itemModelDisplay(WhimsyRegistry.BlockReg.GNOME);
+        itemModel(WhimsyRegistry.BlockReg.LANTERN_GNOME);
+
         itemModel(WhimsyRegistry.BlockReg.HORSESHOE);
         itemModel(WhimsyRegistry.BlockReg.GOLDEN_HORSESHOE);
+
+        itemModel(WhimsyRegistry.BlockReg.RED_LAWN_MOWER);
+        itemModel(WhimsyRegistry.BlockReg.ORANGE_LAWN_MOWER);
+        itemModel(WhimsyRegistry.BlockReg.BLUE_LAWN_MOWER);
+        itemModel(WhimsyRegistry.BlockReg.YELLOW_LAWN_MOWER);
+
+        itemModel(WhimsyRegistry.BlockReg.PAPER_LANTERN);
+        itemModel(WhimsyRegistry.BlockReg.BLUE_PAPER_LANTERN);
+        itemModel(WhimsyRegistry.BlockReg.RED_PAPER_LANTERN);
+        itemModel(WhimsyRegistry.BlockReg.WOOD_FRAMED_PAPER_LANTERN);
+        itemModel(WhimsyRegistry.BlockReg.BAMBOO_FRAMED_PAPER_LANTERN);
+        itemModel(WhimsyRegistry.BlockReg.TREE_PAPER_LANTERN);
 
         itemModel(WhimsyRegistry.BlockReg.PHONE);
         itemModel(WhimsyRegistry.BlockReg.BLACK_PHONE);
         itemModel(WhimsyRegistry.BlockReg.RED_PHONE);
         itemModel(WhimsyRegistry.BlockReg.BLUE_PHONE);
+
+        itemModelDisplay(WhimsyRegistry.BlockReg.VINE_RATTAN_CHAIR);
+        itemModelDisplay(WhimsyRegistry.BlockReg.WARPED_RATTAN_CHAIR);
+
+        itemModel(WhimsyRegistry.BlockReg.SHOWER);
+
+        itemModel(WhimsyRegistry.BlockReg.FLAMINGO_SWIMMING_RING);
+        itemModel(WhimsyRegistry.BlockReg.SWAN_SWIMMING_RING);
+        itemModel(WhimsyRegistry.BlockReg.BLACK_SWAN_SWIMMING_RING);
 
         itemModel(WhimsyRegistry.BlockReg.BLUE_TOY_PLANE);
         itemModel(WhimsyRegistry.BlockReg.RED_TOY_PLANE);

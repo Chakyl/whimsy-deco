@@ -1,4 +1,6 @@
 {
+	"format_version": "1.21.6",
+	"credit": "Made with Blockbench",
 	"render_type": "minecraft:cutout",
 	"textures": {
 		"0": "whimsy_deco:block/caution_floor_sign",
@@ -19,9 +21,9 @@
 			}
 		},
 		{
-			"from": [1.9, 16.1, 7.025],
-			"to": [14.1, 17.1, 9.025],
-			"rotation": {"angle": 0, "axis": "y", "origin": [1.9, 15.1, 7.025]},
+			"from": [1.9, 15.825, 7.025],
+			"to": [14.1, 16.825, 9.025],
+			"rotation": {"angle": 0, "axis": "y", "origin": [1.9, 14.825, 7.025]},
 			"faces": {
 				"north": {"uv": [0, 0, 12, 1], "texture": "#0"},
 				"east": {"uv": [0, 0, 1, 0.5], "texture": "#0"},

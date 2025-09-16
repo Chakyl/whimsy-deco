@@ -1,4 +1,5 @@
 {
+	"render_type": "minecraft:cutout",
 	"texture_size": [32, 32],
 	"textures": {
 		"3": "whimsy_deco:block/shower",
@@ -7,7 +8,7 @@
 	"elements": [
 		{
 			"from": [9, 3, 14],
-			"to": [11, 26, 16],
+			"to": [11, 25.99, 16],
 			"rotation": {"angle": 0, "axis": "y", "origin": [9, 8, 14]},
 			"faces": {
 				"north": {"uv": [0, 0, 1, 11.5], "texture": "#3"},
@@ -199,7 +200,7 @@
 		"gui": {
 			"rotation": [-172.07, 51.92, 178.1],
 			"translation": [-2, -4.5, 0],
-			"scale": [0.65, 0.65, 0.65]
+			"scale": [0.56, 0.56, 0.56]
 		},
 		"fixed": {
 			"translation": [0, 0, -7]

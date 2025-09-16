@@ -32,7 +32,7 @@ public class PhoneBlock extends RotatingBlock {
     public static final BooleanProperty WALL = BooleanProperty.create("wall");
 
     public PhoneBlock(Properties props) {
-        super(props, createShapeBuilder(SHAPE));
+        super(props, createShapeBuilder());
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(WALL, false).setValue(WATERLOGGED, false));
     }
 
@@ -55,7 +55,7 @@ public class PhoneBlock extends RotatingBlock {
         return !pState.getValue(WALL) || canSurviveOnWall(pState, pLevel, pPos);
     }
 
-    public static ShapeBuilder createShapeBuilder(final VoxelShape shape) {
+    public static ShapeBuilder createShapeBuilder() {
         return blockState -> {
             final Boolean flying = blockState.getValue(WALL);
             final Direction facing = blockState.getValue(FACING);
@@ -63,9 +63,4 @@ public class PhoneBlock extends RotatingBlock {
         };
     }
 
-    @Override
-    public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
-        pLevel.setBlockAndUpdate(pPos, pState.setValue(WALL, !pState.getValue(WALL)));
-        return InteractionResult.SUCCESS;
-    }
 }

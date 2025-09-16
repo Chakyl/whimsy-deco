@@ -1,0 +1,7 @@
+{
+	"parent": "whimsy_deco:block/paper_lantern",
+	"textures": {
+		"5": "whimsy_deco:block/paper_lantern_blue",
+		"particle": "whimsy_deco:block/paper_lantern_blue"
+	}
+}
