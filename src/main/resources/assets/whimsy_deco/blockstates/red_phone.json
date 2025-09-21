@@ -1,36 +1,38 @@
 {
-  "multipart": [
-    {
-      "when": { "AND": [ { "wall": true }, { "facing": "north" } ] },
-      "apply": { "model": "whimsy_deco:block/red_phone", "x": 90  }
+  "variants": {
+    "wall=false,facing=north": {
+      "model": "whimsy_deco:block/red_phone"
     },
-    {
-      "when": { "AND": [ { "wall": false }, { "facing": "north" } ] },
-      "apply": { "model": "whimsy_deco:block/red_phone" }
+    "wall=true,facing=north": {
+      "model": "whimsy_deco:block/red_phone",
+      "x": 90
     },
-    {
-      "when": { "AND": [ { "wall": true }, { "facing": "south" } ] },
-      "apply": { "model": "whimsy_deco:block/red_phone", "y": 180, "x": 90  }
+    "wall=false,facing=south": {
+      "model": "whimsy_deco:block/red_phone",
+      "y": 180
     },
-    {
-      "when": { "AND": [ { "wall": false }, { "facing": "south" } ] },
-      "apply": { "model": "whimsy_deco:block/red_phone", "y": 180 }
+    "wall=true,facing=south": {
+      "model": "whimsy_deco:block/red_phone",
+      "y": 180,
+      "x": 90
     },
-    {
-      "when": { "AND": [ { "wall": true }, { "facing": "east" } ] },
-      "apply": { "model": "whimsy_deco:block/red_phone", "y": 90, "x": 90 }
+    "wall=false,facing=east": {
+      "model": "whimsy_deco:block/red_phone",
+      "y": 90
     },
-    {
-      "when": { "AND": [ { "wall": false }, { "facing": "east" } ] },
-      "apply": { "model": "whimsy_deco:block/red_phone", "y": 90 }
+    "wall=true,facing=east": {
+      "model": "whimsy_deco:block/red_phone",
+      "y": 90,
+      "x": 90
     },
-    {
-      "when": { "AND": [ { "wall": true }, { "facing": "west" } ] },
-      "apply": { "model": "whimsy_deco:block/red_phone", "y": 270, "x": 90 }
+    "wall=false,facing=west": {
+      "model": "whimsy_deco:block/red_phone",
+      "y": 270
     },
-    {
-      "when": { "AND": [ { "wall": false }, { "facing": "west" } ] },
-      "apply": { "model": "whimsy_deco:block/red_phone", "y": 270 }
+    "wall=true,facing=west": {
+      "model": "whimsy_deco:block/red_phone",
+      "y": 270,
+      "x": 90
     }
-  ]
+  }
 }

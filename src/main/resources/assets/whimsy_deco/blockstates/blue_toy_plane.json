@@ -1,36 +1,34 @@
 {
-  "multipart": [
-    {
-      "when": { "AND": [ { "flying": false }, { "facing": "north" } ] },
-      "apply": { "model": "whimsy_deco:block/blue_toy_plane" }
+  "variants": {
+    "flying=false,facing=north": {
+      "model": "whimsy_deco:block/blue_toy_plane"
     },
-    {
-      "when": { "AND": [ { "flying": true }, { "facing": "north" } ] },
-      "apply": { "model": "whimsy_deco:block/blue_toy_plane_fly" }
+    "flying=true,facing=north": {
+      "model": "whimsy_deco:block/blue_toy_plane_fly"
     },
-    {
-      "when": { "AND": [ { "flying": false }, { "facing": "south" } ] },
-      "apply": { "model": "whimsy_deco:block/blue_toy_plane", "y": 180 }
+    "flying=false,facing=south": {
+      "model": "whimsy_deco:block/blue_toy_plane",
+      "y": 180
     },
-    {
-      "when": { "AND": [ { "flying": true }, { "facing": "south" } ] },
-      "apply": { "model": "whimsy_deco:block/blue_toy_plane_fly", "y": 180 }
+    "flying=true,facing=south": {
+      "model": "whimsy_deco:block/blue_toy_plane_fly",
+      "y": 180
     },
-    {
-      "when": { "AND": [ { "flying": false }, { "facing": "east" } ] },
-      "apply": { "model": "whimsy_deco:block/blue_toy_plane", "y": 90 }
+    "flying=false,facing=east": {
+      "model": "whimsy_deco:block/blue_toy_plane",
+      "y": 90
     },
-    {
-      "when": { "AND": [ { "flying": true }, { "facing": "east" } ] },
-      "apply": { "model": "whimsy_deco:block/blue_toy_plane_fly", "y": 90 }
+    "flying=true,facing=east": {
+      "model": "whimsy_deco:block/blue_toy_plane_fly",
+      "y": 90
     },
-    {
-      "when": { "AND": [ { "flying": false }, { "facing": "west" } ] },
-      "apply": { "model": "whimsy_deco:block/blue_toy_plane", "y": 270 }
+    "flying=false,facing=west": {
+      "model": "whimsy_deco:block/blue_toy_plane",
+      "y": 270
     },
-    {
-      "when": { "AND": [ { "flying": true }, { "facing": "west" } ] },
-      "apply": { "model": "whimsy_deco:block/blue_toy_plane_fly", "y": 270 }
+    "flying=true,facing=west": {
+      "model": "whimsy_deco:block/blue_toy_plane_fly",
+      "y": 270
     }
-  ]
+  }
 }

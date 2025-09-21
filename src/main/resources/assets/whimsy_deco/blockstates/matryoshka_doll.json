@@ -1,0 +1,68 @@
+{
+  "multipart": [
+    {
+      "when": { "AND": [ { "type": 0 }, { "facing": "north" } ] },
+      "apply": { "model": "whimsy_deco:block/matryoshka_doll" }
+    },
+    {
+      "when": { "AND": [ { "type": 1 }, { "facing": "north" } ] },
+      "apply": { "model": "whimsy_deco:block/matryoshka_doll_2" }
+    },
+    {
+      "when": { "AND": [ { "type": 2 }, { "facing": "north" } ] },
+      "apply": { "model": "whimsy_deco:block/matryoshka_doll_3" }
+    },
+    {
+      "when": { "AND": [ { "type": 3 }, { "facing": "north" } ] },
+      "apply": { "model": "whimsy_deco:block/matryoshka_doll_4" }
+    },
+    {
+      "when": { "AND": [ { "type": 0 }, { "facing": "south" } ] },
+      "apply": { "model": "whimsy_deco:block/matryoshka_doll", "y": 180 }
+    },
+    {
+      "when": { "AND": [ { "type": 1 }, { "facing": "south" } ] },
+      "apply": { "model": "whimsy_deco:block/matryoshka_doll_2", "y": 180 }
+    },
+    {
+      "when": { "AND": [ { "type": 2 }, { "facing": "south" } ] },
+      "apply": { "model": "whimsy_deco:block/matryoshka_doll_3", "y": 180 }
+    },
+    {
+      "when": { "AND": [ { "type": 3 }, { "facing": "south" } ] },
+      "apply": { "model": "whimsy_deco:block/matryoshka_doll_4", "y": 180 }
+    },
+    {
+      "when": { "AND": [ { "type": 0 }, { "facing": "east" } ] },
+      "apply": { "model": "whimsy_deco:block/matryoshka_doll", "y": 90 }
+    },
+    {
+      "when": { "AND": [ { "type": 1 }, { "facing": "east" } ] },
+      "apply": { "model": "whimsy_deco:block/matryoshka_doll_2", "y": 90 }
+    },
+    {
+      "when": { "AND": [ { "type": 2 }, { "facing": "east" } ] },
+      "apply": { "model": "whimsy_deco:block/matryoshka_doll_3", "y": 90 }
+    },
+    {
+      "when": { "AND": [ { "type": 3 }, { "facing": "east" } ] },
+      "apply": { "model": "whimsy_deco:block/matryoshka_doll_4", "y": 90 }
+    },
+    {
+      "when": { "AND": [ { "type": 0 }, { "facing": "west" } ] },
+      "apply": { "model": "whimsy_deco:block/matryoshka_doll", "y": 270 }
+    },
+    {
+      "when": { "AND": [ { "type": 1 }, { "facing": "west" } ] },
+      "apply": { "model": "whimsy_deco:block/matryoshka_doll_2", "y": 270 }
+    },
+    {
+      "when": { "AND": [ { "type": 2 }, { "facing": "west" } ] },
+      "apply": { "model": "whimsy_deco:block/matryoshka_doll_3", "y": 270 }
+    },
+    {
+      "when": { "AND": [ { "type": 3 }, { "facing": "west" } ] },
+      "apply": { "model": "whimsy_deco:block/matryoshka_doll_4", "y": 270 }
+    }
+  ]
+}

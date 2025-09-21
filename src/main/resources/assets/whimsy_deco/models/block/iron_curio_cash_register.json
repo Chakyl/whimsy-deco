@@ -1,0 +1,7 @@
+{
+	"parent": "whimsy_deco:block/black_curio_cash_register",
+	"textures": {
+		"2": "whimsy_deco:block/curio_cash_register_iron",
+		"particle": "whimsy_deco:block/curio_cash_register_iron"
+	}
+}

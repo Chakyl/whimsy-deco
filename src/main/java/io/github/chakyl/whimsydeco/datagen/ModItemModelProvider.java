@@ -22,7 +22,22 @@ public class ModItemModelProvider extends ItemModelProvider {
         itemModelDisplay(WhimsyRegistry.BlockReg.YELLOW_ATM);
         itemModelDisplay(WhimsyRegistry.BlockReg.BLUE_ATM);
 
+        itemModel(WhimsyRegistry.BlockReg.BAMBOO_CANDLE);
+
         itemModel(WhimsyRegistry.BlockReg.CAUTION_FLOOR_SIGN);
+
+        itemModel(WhimsyRegistry.BlockReg.OAK_DESK_MIRROR);
+        itemModel(WhimsyRegistry.BlockReg.SPRUCE_DESK_MIRROR);
+        itemModel(WhimsyRegistry.BlockReg.DARK_OAK_DESK_MIRROR);
+
+        itemModel(WhimsyRegistry.BlockReg.CASH_REGISTER);
+        itemModel(WhimsyRegistry.BlockReg.BLACK_CASH_REGISTER);
+        itemModel(WhimsyRegistry.BlockReg.GRAY_CASH_REGISTER);
+
+        itemModel(WhimsyRegistry.BlockReg.BLACK_CURIO_CASH_REGISTER);
+        itemModel(WhimsyRegistry.BlockReg.IRON_CURIO_CASH_REGISTER);
+        itemModel(WhimsyRegistry.BlockReg.COPPER_CURIO_CASH_REGISTER);
+        itemModel(WhimsyRegistry.BlockReg.GOLD_CURIO_CASH_REGISTER);
 
         itemModel(WhimsyRegistry.BlockReg.DARTBOARD);
 
@@ -46,6 +61,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         itemModel(WhimsyRegistry.BlockReg.BLUE_LAWN_MOWER);
         itemModel(WhimsyRegistry.BlockReg.YELLOW_LAWN_MOWER);
 
+        itemModel(WhimsyRegistry.BlockReg.MATRYOSHKA_DOLL);
+
         itemModel(WhimsyRegistry.BlockReg.PAPER_LANTERN);
         itemModel(WhimsyRegistry.BlockReg.BLUE_PAPER_LANTERN);
         itemModel(WhimsyRegistry.BlockReg.RED_PAPER_LANTERN);
@@ -61,11 +78,23 @@ public class ModItemModelProvider extends ItemModelProvider {
         itemModelDisplay(WhimsyRegistry.BlockReg.VINE_RATTAN_CHAIR);
         itemModelDisplay(WhimsyRegistry.BlockReg.WARPED_RATTAN_CHAIR);
 
+
+        itemModel(WhimsyRegistry.BlockReg.RUBBER_DUCK);
+
+        itemModel(WhimsyRegistry.BlockReg.SHIP_HELM);
+
         itemModel(WhimsyRegistry.BlockReg.SHOWER);
+
+        itemModel(WhimsyRegistry.BlockReg.RED_STOCKING);
+        itemModel(WhimsyRegistry.BlockReg.GREEN_STOCKING);
+        itemModel(WhimsyRegistry.BlockReg.BLUE_STOCKING);
+        itemModel(WhimsyRegistry.BlockReg.ORANGE_STOCKING);
 
         itemModel(WhimsyRegistry.BlockReg.FLAMINGO_SWIMMING_RING);
         itemModel(WhimsyRegistry.BlockReg.SWAN_SWIMMING_RING);
         itemModel(WhimsyRegistry.BlockReg.BLACK_SWAN_SWIMMING_RING);
+
+        itemModel(WhimsyRegistry.BlockReg.TRAFFIC_CONE);
 
         itemModel(WhimsyRegistry.BlockReg.BLUE_TOY_PLANE);
         itemModel(WhimsyRegistry.BlockReg.RED_TOY_PLANE);
@@ -79,6 +108,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         itemModel(WhimsyRegistry.BlockReg.GOLDEN_PIG_PLUSHIE);
         itemModel(WhimsyRegistry.BlockReg.VOCAL_DOLL);
         itemModel(WhimsyRegistry.BlockReg.RED_VOCAL_DOLL);
+
+        itemModel(WhimsyRegistry.BlockReg.CLASSIC_TILE);
+        itemModel(WhimsyRegistry.BlockReg.LIGHT_TILE);
     }
 
     public void itemModel(RegistryObject<Block> block) {

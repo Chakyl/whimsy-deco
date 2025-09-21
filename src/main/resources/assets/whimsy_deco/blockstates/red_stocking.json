@@ -1,0 +1,20 @@
+{
+  "multipart": [
+    {
+      "when":  { "facing": "north" },
+      "apply": { "model": "whimsy_deco:block/red_stocking" }
+    },
+    {
+      "when":  { "facing": "south" },
+      "apply": { "model": "whimsy_deco:block/red_stocking", "y": 180 }
+    },
+    {
+      "when":  { "facing": "east" },
+      "apply": { "model": "whimsy_deco:block/red_stocking", "y": 90 }
+    },
+    {
+      "when":  { "facing": "west" },
+      "apply": { "model": "whimsy_deco:block/red_stocking", "y": 270 }
+    }
+  ]
+}

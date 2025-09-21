@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "whimsy_deco:block/rubber_duck"
+    },
+    "facing=south": {
+      "model": "whimsy_deco:block/rubber_duck",
+      "y": 180
+    },
+    "facing=east": {
+      "model": "whimsy_deco:block/rubber_duck",
+      "y": 90
+    },
+    "facing=west": {
+      "model": "whimsy_deco:block/rubber_duck",
+      "y": 270
+    }
+  }
+}

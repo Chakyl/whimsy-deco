@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "whimsy_deco:block/classic_tile"
+  }
+}

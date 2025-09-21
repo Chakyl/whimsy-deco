@@ -1,20 +1,19 @@
 {
-  "multipart": [
-    {
-      "when":  { "facing": "north" },
-      "apply": { "model": "whimsy_deco:block/golden_pig_plushie" }
+  "variants": {
+    "facing=north": {
+      "model": "whimsy_deco:block/golden_pig_plushie"
     },
-    {
-      "when":  { "facing": "south" },
-      "apply": { "model": "whimsy_deco:block/golden_pig_plushie", "y": 180 }
+    "facing=south": {
+      "model": "whimsy_deco:block/golden_pig_plushie",
+      "y": 180
     },
-    {
-      "when":  { "facing": "east" },
-      "apply": { "model": "whimsy_deco:block/golden_pig_plushie", "y": 90 }
+    "facing=east": {
+      "model": "whimsy_deco:block/golden_pig_plushie",
+      "y": 90
     },
-    {
-      "when":  { "facing": "west" },
-      "apply": { "model": "whimsy_deco:block/golden_pig_plushie", "y": 270 }
+    "facing=west": {
+      "model": "whimsy_deco:block/golden_pig_plushie",
+      "y": 270
     }
-  ]
+  }
 }

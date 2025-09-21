@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "whimsy_deco:block/ship_helm"
+    },
+    "facing=south": {
+      "model": "whimsy_deco:block/ship_helm",
+      "y": 180
+    },
+    "facing=east": {
+      "model": "whimsy_deco:block/ship_helm",
+      "y": 90
+    },
+    "facing=west": {
+      "model": "whimsy_deco:block/ship_helm",
+      "y": 270
+    }
+  }
+}

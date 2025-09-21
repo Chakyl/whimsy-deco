@@ -1,0 +1,7 @@
+{
+	"parent": "whimsy_deco:block/oak_desk_mirror",
+	"textures": {
+		"2": "whimsy_deco:block/desk_mirror_spruce",
+		"particle": "whimsy_deco:block/desk_mirror_spruce"
+	}
+}

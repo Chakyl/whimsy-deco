@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "candles=1,lit=false": {
+      "model": "whimsy_deco:block/bamboo_candle"
+    },
+    "candles=1,lit=true": {
+      "model": "whimsy_deco:block/bamboo_candle"
+    },
+    "candles=2,lit=false": {
+      "model": "whimsy_deco:block/bamboo_candle2"
+    },
+    "candles=2,lit=true": {
+      "model": "whimsy_deco:block/bamboo_candle2"
+    },
+    "candles=3,lit=false": {
+      "model": "whimsy_deco:block/bamboo_candle3"
+    },
+    "candles=3,lit=true": {
+      "model": "whimsy_deco:block/bamboo_candle3"
+    },
+    "candles=4,lit=false": {
+      "model": "whimsy_deco:block/bamboo_candle4"
+    },
+    "candles=4,lit=true": {
+      "model": "whimsy_deco:block/bamboo_candle4"
+    }
+  }
+}
