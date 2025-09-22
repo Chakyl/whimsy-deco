@@ -114,6 +114,11 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         generateDropSelf(WhimsyRegistry.BlockRegistry.CLASSIC_TILE);
         generateDropSelf(WhimsyRegistry.BlockRegistry.LIGHT_TILE);
 
+        generateDropSelf(WhimsyRegistry.BlockRegistry.CAST_IRON_LEDGE);
+        generateDropSelf(WhimsyRegistry.BlockRegistry.CAST_IRON_TRAPDOOR);
+        generateDropSelf(WhimsyRegistry.BlockRegistry.BROOM);
+        generateDropSelf(WhimsyRegistry.BlockRegistry.PUSH_BROOM);
+
         // Animated
         generateDropSelf(WhimsyRegistry.BlockRegistry.COWBELL);
         generateDropSelf(WhimsyRegistry.BlockRegistry.LUCKY_CAT);

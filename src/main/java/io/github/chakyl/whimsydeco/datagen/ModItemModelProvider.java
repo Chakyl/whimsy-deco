@@ -115,6 +115,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         itemModel(WhimsyRegistry.BlockRegistry.CLASSIC_TILE);
         itemModel(WhimsyRegistry.BlockRegistry.LIGHT_TILE);
 
+        itemModel(WhimsyRegistry.BlockRegistry.CAST_IRON_LEDGE);
+        itemModel(WhimsyRegistry.BlockRegistry.BROOM);
+        itemModel(WhimsyRegistry.BlockRegistry.PUSH_BROOM);
+
         // Animated
         itemModel(WhimsyRegistry.BlockRegistry.COWBELL);
         itemModel(WhimsyRegistry.BlockRegistry.LUCKY_CAT);

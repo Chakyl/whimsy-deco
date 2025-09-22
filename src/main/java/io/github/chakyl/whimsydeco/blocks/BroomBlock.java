@@ -13,38 +13,34 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.phys.BlockHitResult;
-import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
-public class CashRegisterBlock extends RotatingBlock {
-    public static final VoxelShape SHAPE = Shapes.or(
-            box(0, 13, 10, 16, 16, 16),
-            box(0, 11, 8, 16, 16, 16),
-            box(0, 9, 6, 16, 12, 16),
-            box(0, 7, 4, 16, 9, 16),
-            box(0, 5, 2, 16, 7, 16),
-            box(0, 0, 0, 16, 5, 16));
+public class BroomBlock extends RotatingBlock {
+    public static final VoxelShape SHAPE = box(0, 0, 0, 16, 11, 16);
+    public static final VoxelShape SHAPE_LEANING = box(0, 6, 0, 16, 16, 16);
 
-    public static final BooleanProperty OPEN = BooleanProperty.create("open");
+    public static final BooleanProperty LEANING = BooleanProperty.create("leaning");
 
-    public CashRegisterBlock(Properties props, VoxelShape pShape) {
-        super(props, createShapeBuilder(pShape));
-        this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(OPEN, false).setValue(WATERLOGGED, false));
-    }
-
-    public CashRegisterBlock(Properties props) {
+    public BroomBlock(Properties props) {
         super(props, createShapeBuilder(SHAPE));
-        this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(OPEN, false).setValue(WATERLOGGED, false));
+        this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(LEANING, false).setValue(WATERLOGGED, false));
     }
 
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> pBuilder) {
-        pBuilder.add(FACING, OPEN, WATERLOGGED);
+        pBuilder.add(FACING, LEANING, WATERLOGGED);
+    }
+
+    public static ShapeBuilder createShapeBuilder(final VoxelShape shape) {
+        return blockState -> {
+            final Boolean leaning = blockState.getValue(LEANING);
+            return leaning ? SHAPE_LEANING : SHAPE;
+        };
     }
 
     @Override
     public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
-        pLevel.setBlockAndUpdate(pPos, pState.setValue(OPEN, !pState.getValue(OPEN)));
+        pLevel.setBlockAndUpdate(pPos, pState.setValue(LEANING, !pState.getValue(LEANING)));
         return InteractionResult.SUCCESS;
     }
 

@@ -12,7 +12,7 @@ import software.bernie.geckolib.core.object.PlayState;
 import software.bernie.geckolib.util.GeckoLibUtil;
 
 public class LuckyCatBlockEntity extends BlockEntity implements GeoBlockEntity {
-    protected static final RawAnimation DEPLOY_ANIM = RawAnimation.begin().thenPlay("misc.deploy").thenLoop("misc.idle");
+    protected static final RawAnimation DEPLOY_ANIM = RawAnimation.begin().thenPlay("rotating").thenLoop("rotating");
 
     private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
 

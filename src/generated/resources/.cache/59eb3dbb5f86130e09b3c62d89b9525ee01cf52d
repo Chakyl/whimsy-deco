@@ -1,4 +1,4 @@
-// 1.20.1	2025-09-21T21:25:35.9642614	Loot Tables
+// 1.20.1	2025-09-22T18:47:27.2531781	Loot Tables
 51f50a5df67bff96d66fdfdea7c69791533a2a47 data/whimsy_deco/loot_tables/blocks/bamboo_candle.json
 5a981fc663027a7ecae456ec1de616caeb781f90 data/whimsy_deco/loot_tables/blocks/bamboo_framed_paper_lantern.json
 9700ae25029fec053506507bf8952cf203a748b9 data/whimsy_deco/loot_tables/blocks/bathroom_rack.json
@@ -15,7 +15,10 @@ ee2cbb8818972b396026626444177e09415e07b3 data/whimsy_deco/loot_tables/blocks/blu
 b5f6cfc132c74240a30737f10f88b8a74f9cb998 data/whimsy_deco/loot_tables/blocks/blue_phone.json
 fa44ad68291796f3c12f1f85b7c77cc1aa6d34e8 data/whimsy_deco/loot_tables/blocks/blue_stocking.json
 a56a92a312209d22910d4ebb26e8f60e2f8ae454 data/whimsy_deco/loot_tables/blocks/blue_toy_plane.json
+07f6734375103a27c9e0f2f5927aef697de778cf data/whimsy_deco/loot_tables/blocks/broom.json
 3ba7a158e40f55d03c20b0d336a6d12f182a65d0 data/whimsy_deco/loot_tables/blocks/cash_register.json
+5fa30ab4539fef18e630dcd757bdc256cf0f41de data/whimsy_deco/loot_tables/blocks/cast_iron_ledge.json
+25a7f625a8b0ceb234542d869fbb1fe11c52e108 data/whimsy_deco/loot_tables/blocks/cast_iron_trapdoor.json
 a445f3eae3c7829d7fdf1fa5c81e9ee79a4a0520 data/whimsy_deco/loot_tables/blocks/caution_floor_sign.json
 aace1cf0a40f3ca22053d9b21ff494e66a94b601 data/whimsy_deco/loot_tables/blocks/classic_tile.json
 2409d399b066984bf751a6621daa7bdd8f0eba0a data/whimsy_deco/loot_tables/blocks/copper_curio_cash_register.json
@@ -48,6 +51,7 @@ ae7cf9e35a1b629e1bce6c9fa544f7aba3a9298b data/whimsy_deco/loot_tables/blocks/ora
 b3117ae1b949269e66d7615a0eb204149931093d data/whimsy_deco/loot_tables/blocks/paper_lantern.json
 50f58d49ca33740f93fd8ee896c165a5e64ceb54 data/whimsy_deco/loot_tables/blocks/phone.json
 a5ece6126c29c472d00e3136b1f5aa09ead88e47 data/whimsy_deco/loot_tables/blocks/pink_froggy_chair.json
+fac514d314734ec9b68fa0ee24be2af384eec693 data/whimsy_deco/loot_tables/blocks/push_broom.json
 866e888ff0622ab4e7b7fd942db817fc2cb16323 data/whimsy_deco/loot_tables/blocks/rattan_stool.json
 44689ee8053880f7d33d9cee10b18f9ae9b816bb data/whimsy_deco/loot_tables/blocks/red_atm.json
 764281a654d6a2d0c546b2ba4979e21be136783f data/whimsy_deco/loot_tables/blocks/red_lawn_mower.json

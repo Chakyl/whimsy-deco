@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "leaning=false,facing=north": {
+      "model": "whimsy_deco:block/broom"
+    },
+    "leaning=true,facing=north": {
+      "model": "whimsy_deco:block/broom_leaning"
+    },
+    "leaning=false,facing=south": {
+      "model": "whimsy_deco:block/broom",
+      "y": 180
+    },
+    "leaning=true,facing=south": {
+      "model": "whimsy_deco:block/broom_leaning",
+      "y": 180
+    },
+    "leaning=false,facing=east": {
+      "model": "whimsy_deco:block/broom",
+      "y": 90
+    },
+    "leaning=true,facing=east": {
+      "model": "whimsy_deco:block/broom_leaning",
+      "y": 90
+    },
+    "leaning=false,facing=west": {
+      "model": "whimsy_deco:block/broom",
+      "y": 270
+    },
+    "leaning=true,facing=west": {
+      "model": "whimsy_deco:block/broom_leaning",
+      "y": 270
+    }
+  }
+}
