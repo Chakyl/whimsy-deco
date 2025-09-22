@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "whimsy_deco:block/rattan_stool"
+    },
+    "facing=south": {
+      "model": "whimsy_deco:block/rattan_stool",
+      "y": 180
+    },
+    "facing=east": {
+      "model": "whimsy_deco:block/rattan_stool",
+      "y": 90
+    },
+    "facing=west": {
+      "model": "whimsy_deco:block/rattan_stool",
+      "y": 270
+    }
+  }
+}

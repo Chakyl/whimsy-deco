@@ -16,101 +16,110 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-        itemModelDisplay(WhimsyRegistry.BlockReg.BLACK_ATM);
-        itemModelDisplay(WhimsyRegistry.BlockReg.GREEN_ATM);
-        itemModelDisplay(WhimsyRegistry.BlockReg.RED_ATM);
-        itemModelDisplay(WhimsyRegistry.BlockReg.YELLOW_ATM);
-        itemModelDisplay(WhimsyRegistry.BlockReg.BLUE_ATM);
+        itemModelDisplay(WhimsyRegistry.BlockRegistry.BLACK_ATM);
+        itemModelDisplay(WhimsyRegistry.BlockRegistry.GREEN_ATM);
+        itemModelDisplay(WhimsyRegistry.BlockRegistry.RED_ATM);
+        itemModelDisplay(WhimsyRegistry.BlockRegistry.YELLOW_ATM);
+        itemModelDisplay(WhimsyRegistry.BlockRegistry.BLUE_ATM);
 
-        itemModel(WhimsyRegistry.BlockReg.BAMBOO_CANDLE);
+        itemModel(WhimsyRegistry.BlockRegistry.BAMBOO_CANDLE);
 
-        itemModel(WhimsyRegistry.BlockReg.CAUTION_FLOOR_SIGN);
+        itemModel(WhimsyRegistry.BlockRegistry.BATHROOM_RACK);
 
-        itemModel(WhimsyRegistry.BlockReg.OAK_DESK_MIRROR);
-        itemModel(WhimsyRegistry.BlockReg.SPRUCE_DESK_MIRROR);
-        itemModel(WhimsyRegistry.BlockReg.DARK_OAK_DESK_MIRROR);
+        itemModel(WhimsyRegistry.BlockRegistry.CAUTION_FLOOR_SIGN);
 
-        itemModel(WhimsyRegistry.BlockReg.CASH_REGISTER);
-        itemModel(WhimsyRegistry.BlockReg.BLACK_CASH_REGISTER);
-        itemModel(WhimsyRegistry.BlockReg.GRAY_CASH_REGISTER);
+        itemModel(WhimsyRegistry.BlockRegistry.OAK_DESK_MIRROR);
+        itemModel(WhimsyRegistry.BlockRegistry.SPRUCE_DESK_MIRROR);
+        itemModel(WhimsyRegistry.BlockRegistry.DARK_OAK_DESK_MIRROR);
 
-        itemModel(WhimsyRegistry.BlockReg.BLACK_CURIO_CASH_REGISTER);
-        itemModel(WhimsyRegistry.BlockReg.IRON_CURIO_CASH_REGISTER);
-        itemModel(WhimsyRegistry.BlockReg.COPPER_CURIO_CASH_REGISTER);
-        itemModel(WhimsyRegistry.BlockReg.GOLD_CURIO_CASH_REGISTER);
+        itemModel(WhimsyRegistry.BlockRegistry.CASH_REGISTER);
+        itemModel(WhimsyRegistry.BlockRegistry.BLACK_CASH_REGISTER);
+        itemModel(WhimsyRegistry.BlockRegistry.GRAY_CASH_REGISTER);
 
-        itemModel(WhimsyRegistry.BlockReg.DARTBOARD);
+        itemModel(WhimsyRegistry.BlockRegistry.BLACK_CURIO_CASH_REGISTER);
+        itemModel(WhimsyRegistry.BlockRegistry.IRON_CURIO_CASH_REGISTER);
+        itemModel(WhimsyRegistry.BlockRegistry.COPPER_CURIO_CASH_REGISTER);
+        itemModel(WhimsyRegistry.BlockRegistry.GOLD_CURIO_CASH_REGISTER);
 
-
-        itemModelDisplay(WhimsyRegistry.BlockReg.FROGGY_CHAIR);
-        itemModelDisplay(WhimsyRegistry.BlockReg.YELLOW_FROGGY_CHAIR);
-        itemModelDisplay(WhimsyRegistry.BlockReg.PINK_FROGGY_CHAIR);
-        itemModelDisplay(WhimsyRegistry.BlockReg.ORANGE_FROGGY_CHAIR);
-        itemModelDisplay(WhimsyRegistry.BlockReg.BLUE_FROGGY_CHAIR);
-
-        itemModelDisplay(WhimsyRegistry.BlockReg.GATCHA_MACHINE);
-
-        itemModelDisplay(WhimsyRegistry.BlockReg.GNOME);
-        itemModel(WhimsyRegistry.BlockReg.LANTERN_GNOME);
-
-        itemModel(WhimsyRegistry.BlockReg.HORSESHOE);
-        itemModel(WhimsyRegistry.BlockReg.GOLDEN_HORSESHOE);
-
-        itemModel(WhimsyRegistry.BlockReg.RED_LAWN_MOWER);
-        itemModel(WhimsyRegistry.BlockReg.ORANGE_LAWN_MOWER);
-        itemModel(WhimsyRegistry.BlockReg.BLUE_LAWN_MOWER);
-        itemModel(WhimsyRegistry.BlockReg.YELLOW_LAWN_MOWER);
-
-        itemModel(WhimsyRegistry.BlockReg.MATRYOSHKA_DOLL);
-
-        itemModel(WhimsyRegistry.BlockReg.PAPER_LANTERN);
-        itemModel(WhimsyRegistry.BlockReg.BLUE_PAPER_LANTERN);
-        itemModel(WhimsyRegistry.BlockReg.RED_PAPER_LANTERN);
-        itemModel(WhimsyRegistry.BlockReg.WOOD_FRAMED_PAPER_LANTERN);
-        itemModel(WhimsyRegistry.BlockReg.BAMBOO_FRAMED_PAPER_LANTERN);
-        itemModel(WhimsyRegistry.BlockReg.TREE_PAPER_LANTERN);
-
-        itemModel(WhimsyRegistry.BlockReg.PHONE);
-        itemModel(WhimsyRegistry.BlockReg.BLACK_PHONE);
-        itemModel(WhimsyRegistry.BlockReg.RED_PHONE);
-        itemModel(WhimsyRegistry.BlockReg.BLUE_PHONE);
-
-        itemModelDisplay(WhimsyRegistry.BlockReg.VINE_RATTAN_CHAIR);
-        itemModelDisplay(WhimsyRegistry.BlockReg.WARPED_RATTAN_CHAIR);
+        itemModel(WhimsyRegistry.BlockRegistry.DARTBOARD);
 
 
-        itemModel(WhimsyRegistry.BlockReg.RUBBER_DUCK);
+        itemModelDisplay(WhimsyRegistry.BlockRegistry.FROGGY_CHAIR);
+        itemModelDisplay(WhimsyRegistry.BlockRegistry.YELLOW_FROGGY_CHAIR);
+        itemModelDisplay(WhimsyRegistry.BlockRegistry.PINK_FROGGY_CHAIR);
+        itemModelDisplay(WhimsyRegistry.BlockRegistry.ORANGE_FROGGY_CHAIR);
+        itemModelDisplay(WhimsyRegistry.BlockRegistry.BLUE_FROGGY_CHAIR);
 
-        itemModel(WhimsyRegistry.BlockReg.SHIP_HELM);
+        itemModelDisplay(WhimsyRegistry.BlockRegistry.GATCHA_MACHINE);
 
-        itemModel(WhimsyRegistry.BlockReg.SHOWER);
+        itemModelDisplay(WhimsyRegistry.BlockRegistry.GNOME);
+        itemModel(WhimsyRegistry.BlockRegistry.LANTERN_GNOME);
 
-        itemModel(WhimsyRegistry.BlockReg.RED_STOCKING);
-        itemModel(WhimsyRegistry.BlockReg.GREEN_STOCKING);
-        itemModel(WhimsyRegistry.BlockReg.BLUE_STOCKING);
-        itemModel(WhimsyRegistry.BlockReg.ORANGE_STOCKING);
+        itemModel(WhimsyRegistry.BlockRegistry.HORSESHOE);
+        itemModel(WhimsyRegistry.BlockRegistry.GOLDEN_HORSESHOE);
 
-        itemModel(WhimsyRegistry.BlockReg.FLAMINGO_SWIMMING_RING);
-        itemModel(WhimsyRegistry.BlockReg.SWAN_SWIMMING_RING);
-        itemModel(WhimsyRegistry.BlockReg.BLACK_SWAN_SWIMMING_RING);
+        itemModel(WhimsyRegistry.BlockRegistry.RED_LAWN_MOWER);
+        itemModel(WhimsyRegistry.BlockRegistry.ORANGE_LAWN_MOWER);
+        itemModel(WhimsyRegistry.BlockRegistry.BLUE_LAWN_MOWER);
+        itemModel(WhimsyRegistry.BlockRegistry.YELLOW_LAWN_MOWER);
 
-        itemModel(WhimsyRegistry.BlockReg.TRAFFIC_CONE);
+        itemModel(WhimsyRegistry.BlockRegistry.MATRYOSHKA_DOLL);
 
-        itemModel(WhimsyRegistry.BlockReg.BLUE_TOY_PLANE);
-        itemModel(WhimsyRegistry.BlockReg.RED_TOY_PLANE);
-        itemModel(WhimsyRegistry.BlockReg.YELLOW_TOY_PLANE);
+        itemModel(WhimsyRegistry.BlockRegistry.PAPER_LANTERN);
+        itemModel(WhimsyRegistry.BlockRegistry.BLUE_PAPER_LANTERN);
+        itemModel(WhimsyRegistry.BlockRegistry.RED_PAPER_LANTERN);
+        itemModel(WhimsyRegistry.BlockRegistry.WOOD_FRAMED_PAPER_LANTERN);
+        itemModel(WhimsyRegistry.BlockRegistry.BAMBOO_FRAMED_PAPER_LANTERN);
+        itemModel(WhimsyRegistry.BlockRegistry.TREE_PAPER_LANTERN);
 
-        itemModel(WhimsyRegistry.BlockReg.WASHING_MACHINE);
+        itemModel(WhimsyRegistry.BlockRegistry.PHONE);
+        itemModel(WhimsyRegistry.BlockRegistry.BLACK_PHONE);
+        itemModel(WhimsyRegistry.BlockRegistry.RED_PHONE);
+        itemModel(WhimsyRegistry.BlockRegistry.BLUE_PHONE);
 
-        itemModelDisplay(WhimsyRegistry.BlockReg.BIG_PANDA_PLUSHIE);
-        itemModel(WhimsyRegistry.BlockReg.FUFU_PLUSHIE);
-        itemModel(WhimsyRegistry.BlockReg.FLOWER_PIG_PLUSHIE);
-        itemModel(WhimsyRegistry.BlockReg.GOLDEN_PIG_PLUSHIE);
-        itemModel(WhimsyRegistry.BlockReg.VOCAL_DOLL);
-        itemModel(WhimsyRegistry.BlockReg.RED_VOCAL_DOLL);
+        itemModelDisplay(WhimsyRegistry.BlockRegistry.VINE_RATTAN_CHAIR);
+        itemModelDisplay(WhimsyRegistry.BlockRegistry.WARPED_RATTAN_CHAIR);
 
-        itemModel(WhimsyRegistry.BlockReg.CLASSIC_TILE);
-        itemModel(WhimsyRegistry.BlockReg.LIGHT_TILE);
+        itemModel(WhimsyRegistry.BlockRegistry.RATTAN_STOOL);
+
+        itemModel(WhimsyRegistry.BlockRegistry.RUBBER_DUCK);
+
+        itemModel(WhimsyRegistry.BlockRegistry.SHIP_HELM);
+
+        itemModel(WhimsyRegistry.BlockRegistry.SHOWER);
+
+        itemModel(WhimsyRegistry.BlockRegistry.RED_STOCKING);
+        itemModel(WhimsyRegistry.BlockRegistry.GREEN_STOCKING);
+        itemModel(WhimsyRegistry.BlockRegistry.BLUE_STOCKING);
+        itemModel(WhimsyRegistry.BlockRegistry.ORANGE_STOCKING);
+
+        itemModel(WhimsyRegistry.BlockRegistry.FLAMINGO_SWIMMING_RING);
+        itemModel(WhimsyRegistry.BlockRegistry.SWAN_SWIMMING_RING);
+        itemModel(WhimsyRegistry.BlockRegistry.BLACK_SWAN_SWIMMING_RING);
+
+        itemModel(WhimsyRegistry.BlockRegistry.TRAFFIC_CONE);
+
+        itemModel(WhimsyRegistry.BlockRegistry.BLUE_TOY_PLANE);
+        itemModel(WhimsyRegistry.BlockRegistry.RED_TOY_PLANE);
+        itemModel(WhimsyRegistry.BlockRegistry.YELLOW_TOY_PLANE);
+
+        itemModel(WhimsyRegistry.BlockRegistry.WASHING_MACHINE);
+
+        itemModelDisplay(WhimsyRegistry.BlockRegistry.BIG_PANDA_PLUSHIE);
+        itemModel(WhimsyRegistry.BlockRegistry.FUFU_PLUSHIE);
+        itemModel(WhimsyRegistry.BlockRegistry.FLOWER_PIG_PLUSHIE);
+        itemModel(WhimsyRegistry.BlockRegistry.GOLDEN_PIG_PLUSHIE);
+        itemModel(WhimsyRegistry.BlockRegistry.VOCAL_DOLL);
+        itemModel(WhimsyRegistry.BlockRegistry.RED_VOCAL_DOLL);
+
+        itemModel(WhimsyRegistry.BlockRegistry.CLASSIC_TILE);
+        itemModel(WhimsyRegistry.BlockRegistry.LIGHT_TILE);
+
+        // Animated
+        itemModel(WhimsyRegistry.BlockRegistry.COWBELL);
+        itemModel(WhimsyRegistry.BlockRegistry.LUCKY_CAT);
+        itemModel(WhimsyRegistry.BlockRegistry.GOLD_LUCKY_CAT);
+        itemModel(WhimsyRegistry.BlockRegistry.SINGING_FROG);
     }
 
     public void itemModel(RegistryObject<Block> block) {

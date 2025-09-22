@@ -43,20 +43,20 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-//        customDirectionalTallBlock(WhimsyRegistry.BlockReg.FROGGY_CHAIR.get(),
-//                $ -> existingModel(WhimsyRegistry.BlockReg.FROGGY_CHAIR.get()), FroggyChairBlock.WATERLOGGED);
-//        customDirectionalTallBlock(WhimsyRegistry.BlockReg.YELLOW_FROGGY_CHAIR.get(),
-//                $ -> existingModel(WhimsyRegistry.BlockReg.YELLOW_FROGGY_CHAIR.get()), FroggyChairBlock.WATERLOGGED);
-//        customDirectionalTallBlock(WhimsyRegistry.BlockReg.PINK_FROGGY_CHAIR.get(),
-//                $ -> existingModel(WhimsyRegistry.BlockReg.PINK_FROGGY_CHAIR.get()), FroggyChairBlock.WATERLOGGED);
-//        customDirectionalTallBlock(WhimsyRegistry.BlockReg.ORANGE_FROGGY_CHAIR.get(),
-//                $ -> existingModel(WhimsyRegistry.BlockReg.ORANGE_FROGGY_CHAIR.get()), FroggyChairBlock.WATERLOGGED);
-//        customDirectionalTallBlock(WhimsyRegistry.BlockReg.BLUE_FROGGY_CHAIR.get(),
-//                $ -> existingModel(WhimsyRegistry.BlockReg.BLUE_FROGGY_CHAIR.get()), FroggyChairBlock.WATERLOGGED);
+//        customDirectionalTallBlock(WhimsyRegistry.BlockRegistry.FROGGY_CHAIR.get(),
+//                $ -> existingModel(WhimsyRegistry.BlockRegistry.FROGGY_CHAIR.get()), FroggyChairBlock.WATERLOGGED);
+//        customDirectionalTallBlock(WhimsyRegistry.BlockRegistry.YELLOW_FROGGY_CHAIR.get(),
+//                $ -> existingModel(WhimsyRegistry.BlockRegistry.YELLOW_FROGGY_CHAIR.get()), FroggyChairBlock.WATERLOGGED);
+//        customDirectionalTallBlock(WhimsyRegistry.BlockRegistry.PINK_FROGGY_CHAIR.get(),
+//                $ -> existingModel(WhimsyRegistry.BlockRegistry.PINK_FROGGY_CHAIR.get()), FroggyChairBlock.WATERLOGGED);
+//        customDirectionalTallBlock(WhimsyRegistry.BlockRegistry.ORANGE_FROGGY_CHAIR.get(),
+//                $ -> existingModel(WhimsyRegistry.BlockRegistry.ORANGE_FROGGY_CHAIR.get()), FroggyChairBlock.WATERLOGGED);
+//        customDirectionalTallBlock(WhimsyRegistry.BlockRegistry.BLUE_FROGGY_CHAIR.get(),
+//                $ -> existingModel(WhimsyRegistry.BlockRegistry.BLUE_FROGGY_CHAIR.get()), FroggyChairBlock.WATERLOGGED);
 
-//        toyPlaneStates(WhimsyRegistry.BlockReg.RED_TOY_PLANE.get(),  "red");
-//        toyPlaneStates(WhimsyRegistry.BlockReg.BLUE_TOY_PLANE.get(),  "blue");
-//        toyPlaneStates(WhimsyRegistry.BlockReg.YELLOW_TOY_PLANE.get(), "yellow");
+//        toyPlaneStates(WhimsyRegistry.BlockRegistry.RED_TOY_PLANE.get(),  "red");
+//        toyPlaneStates(WhimsyRegistry.BlockRegistry.BLUE_TOY_PLANE.get(),  "blue");
+//        toyPlaneStates(WhimsyRegistry.BlockRegistry.YELLOW_TOY_PLANE.get(), "yellow");
     }
 
     public void simpleHorizontalState(Block block, String color) {

@@ -1,0 +1,52 @@
+{
+  "multipart": [
+    {
+      "when": { "AND": [ { "facing": "north" } ] },
+      "apply": { "model": "whimsy_deco:block/bathroom_rack" }
+    },
+    {
+      "when": { "AND": [ { "towel": true }, { "facing": "north" } ] },
+      "apply": { "model": "whimsy_deco:block/towel" }
+    },
+    {
+      "when": { "AND": [ { "toilet_paper": true }, { "facing": "north" } ] },
+      "apply": { "model": "whimsy_deco:block/toilet_paper" }
+    },
+    {
+      "when": { "AND": [ { "facing": "south" } ] },
+      "apply": { "model": "whimsy_deco:block/bathroom_rack", "y": 180 }
+    },
+    {
+      "when": { "AND": [ { "towel": true }, { "facing": "south" } ] },
+      "apply": { "model": "whimsy_deco:block/towel", "y": 180 }
+    },
+    {
+      "when": { "AND": [ { "toilet_paper": true }, { "facing": "south" } ] },
+      "apply": { "model": "whimsy_deco:block/toilet_paper", "y": 180 }
+    },
+    {
+      "when": { "AND": [ { "facing": "east" } ] },
+      "apply": { "model": "whimsy_deco:block/bathroom_rack", "y": 90 }
+    },
+    {
+      "when": { "AND": [ { "towel": true }, { "facing": "east" } ] },
+      "apply": { "model": "whimsy_deco:block/towel", "y": 90 }
+    },
+    {
+      "when": { "AND": [ { "toilet_paper": true }, { "facing": "east" } ] },
+      "apply": { "model": "whimsy_deco:block/toilet_paper", "y": 90 }
+    },
+    {
+      "when": { "AND": [ { "facing": "west" } ] },
+      "apply": { "model": "whimsy_deco:block/bathroom_rack", "y": 270 }
+    },
+    {
+      "when": { "AND": [ { "towel": true }, { "facing": "west" } ] },
+      "apply": { "model": "whimsy_deco:block/towel", "y": 270 }
+    },
+    {
+      "when": { "AND": [ { "toilet_paper": true }, { "facing": "west" } ] },
+      "apply": { "model": "whimsy_deco:block/toilet_paper", "y": 270 }
+    }
+  ]
+}

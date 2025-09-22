@@ -2,10 +2,11 @@ package io.github.chakyl.whimsydeco.registry;
 
 import com.google.common.base.Suppliers;
 import io.github.chakyl.whimsydeco.WhimsyDeco;
+import io.github.chakyl.whimsydeco.blockentities.CowbellBlockEntity;
+import io.github.chakyl.whimsydeco.blockentities.GoldLuckyCatBlockEntity;
+import io.github.chakyl.whimsydeco.blockentities.LuckyCatBlockEntity;
+import io.github.chakyl.whimsydeco.blockentities.SingingFrogBlockEntity;
 import io.github.chakyl.whimsydeco.blocks.*;
-import io.github.chakyl.whimsydeco.blocks.PigPlushieBlock;
-import io.github.chakyl.whimsydeco.blocks.PlushieBlock;
-import io.github.chakyl.whimsydeco.blocks.bases.RotatingBlock;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -15,8 +16,8 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.CandleBlock;
 import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.MapColor;
@@ -36,16 +37,18 @@ public final class WhimsyRegistry {
     private static final String MODID = WhimsyDeco.MODID;
 
     private static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MODID);
-    private static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, MODID);
+    public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, MODID);
+    private static final DeferredRegister<BlockEntityType<?>> BLOCK_ENTITY_TYPES = DeferredRegister.create(ForgeRegistries.BLOCK_ENTITY_TYPES, MODID);
     private static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MODID);
 
     public static void register() {
-        BlockReg.register();
-        ItemReg.register();
+        BlockRegistry.register();
+        BlockEntityRegistry.register();
+        ItemRegistry.register();
         CreativeTabReg.register();
     }
 
-    public static final class BlockReg {
+    public static final class BlockRegistry {
 
         private static void register() {
             BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
@@ -67,6 +70,10 @@ public final class WhimsyRegistry {
         public static final RegistryObject<Block> BAMBOO_CANDLE = registerWithItem("bamboo_candle", () ->
                 new BambooCandleBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).sound(SoundType.BAMBOO).noOcclusion().strength(1.5F, 6.0F)));
 
+        // Bathroom Rack
+        public static final RegistryObject<Block> BATHROOM_RACK = registerWithItem("bathroom_rack", () ->
+                new BathroomRackBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).sound(SoundType.WOOD).noOcclusion().strength(1.5F, 6.0F)));
+
         // Cash Register
         public static final RegistryObject<Block> CASH_REGISTER = registerWithItem("cash_register", () ->
                 new CashRegisterBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.METAL).noOcclusion().strength(1.5F, 6.0F)));
@@ -74,6 +81,10 @@ public final class WhimsyRegistry {
                 new CashRegisterBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.METAL).noOcclusion().strength(1.5F, 6.0F)));
         public static final RegistryObject<Block> GRAY_CASH_REGISTER = registerWithItem("gray_cash_register", () ->
                 new CashRegisterBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.METAL).noOcclusion().strength(1.5F, 6.0F)));
+
+        // Cowbell
+        public static final RegistryObject<Block> COWBELL = registerWithItem("cowbell", () ->
+                new CowbellBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.COPPER).noOcclusion().strength(1.5F, 6.0F)));
 
         // Curio Cash Register
         public static final RegistryObject<Block> BLACK_CURIO_CASH_REGISTER = registerWithItem("black_curio_cash_register", () ->
@@ -142,6 +153,12 @@ public final class WhimsyRegistry {
         public static final RegistryObject<Block> MATRYOSHKA_DOLL = registerWithItem("matryoshka_doll", () ->
                 new MatryoshkaBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.METAL).noOcclusion().strength(1.5F, 6.0F)));
 
+        // Lucky Cat
+        public static final RegistryObject<Block> LUCKY_CAT = registerWithItem("lucky_cat", () ->
+                new LuckyCatBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.COPPER).noOcclusion().strength(1.5F, 6.0F)));
+        public static final RegistryObject<Block> GOLD_LUCKY_CAT = registerWithItem("gold_lucky_cat", () ->
+                new GoldLuckyCatBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.COPPER).noOcclusion().strength(1.5F, 6.0F)));
+
         // Paper Lantern
         public static final RegistryObject<Block> PAPER_LANTERN = registerWithItem("paper_lantern", () ->
                 new PaperLanternBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.WOOL).lightLevel(blockState -> 15).noOcclusion().strength(1.5F, 6.0F)));
@@ -168,9 +185,13 @@ public final class WhimsyRegistry {
 
         // Rattan Chair
         public static final RegistryObject<Block> VINE_RATTAN_CHAIR = registerWithItem("vine_rattan_chair", () ->
-                new RattanChairBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.BAMBOO_WOOD).noOcclusion().strength(1.5F, 6.0F)));
+                new RattanChairBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).sound(SoundType.BAMBOO_WOOD).noOcclusion().strength(1.5F, 6.0F)));
         public static final RegistryObject<Block> WARPED_RATTAN_CHAIR = registerWithItem("warped_rattan_chair", () ->
-                new RattanChairBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.NETHER_WOOD).noOcclusion().strength(1.5F, 6.0F)));
+                new RattanChairBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).sound(SoundType.NETHER_WOOD).noOcclusion().strength(1.5F, 6.0F)));
+
+        // Rattan Stool
+        public static final RegistryObject<Block> RATTAN_STOOL = registerWithItem("rattan_stool", () ->
+                new RattanStoolBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).sound(SoundType.BAMBOO_WOOD).noOcclusion().strength(1.5F, 6.0F)));
 
         // Rubber Duck
         public static final RegistryObject<Block> RUBBER_DUCK = registerWithItem("rubber_duck", () ->
@@ -184,21 +205,25 @@ public final class WhimsyRegistry {
         public static final RegistryObject<Block> SHOWER = registerWithItem("shower", () ->
                 new ShowerBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.METAL).noOcclusion().strength(1.5F, 6.0F)));
 
+        // Singing Frog
+        public static final RegistryObject<Block> SINGING_FROG = registerWithItem("singing_frog", () ->
+                new SingingFrogBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.COPPER).noOcclusion().strength(1.5F, 6.0F)));
+
         // Stockings
         public static final RegistryObject<Block> RED_STOCKING = registerWithItem("red_stocking", () ->
-                new StockingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.WOOD).noOcclusion().strength(1.5F, 6.0F)));
+                new StockingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOL).sound(SoundType.WOOL).noOcclusion().strength(1.5F, 6.0F)));
         public static final RegistryObject<Block> GREEN_STOCKING = registerWithItem("green_stocking", () ->
-                new StockingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.WOOD).noOcclusion().strength(1.5F, 6.0F)));
+                new StockingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOL).sound(SoundType.WOOL).noOcclusion().strength(1.5F, 6.0F)));
         public static final RegistryObject<Block> BLUE_STOCKING = registerWithItem("blue_stocking", () ->
-                new StockingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.WOOD).noOcclusion().strength(1.5F, 6.0F)));
+                new StockingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOL).sound(SoundType.WOOL).noOcclusion().strength(1.5F, 6.0F)));
         public static final RegistryObject<Block> ORANGE_STOCKING = registerWithItem("orange_stocking", () ->
-                new StockingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.WOOD).noOcclusion().strength(1.5F, 6.0F)));
+                new StockingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOL).sound(SoundType.WOOL).noOcclusion().strength(1.5F, 6.0F)));
 
         // Swimming Rings
         public static final RegistryObject<Block> FLAMINGO_SWIMMING_RING = registerWithItem("flamingo_swimming_ring", () ->
-                new SwimmingRingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.METAL).noOcclusion().strength(1.5F, 6.0F)));
+                new SwimmingRingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.MOSS).noOcclusion().strength(1.5F, 6.0F)));
         public static final RegistryObject<Block> SWAN_SWIMMING_RING = registerWithItem("swan_swimming_ring", () ->
-                new SwimmingRingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.METAL).noOcclusion().strength(1.5F, 6.0F)));
+                new SwimmingRingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.MOSS).noOcclusion().strength(1.5F, 6.0F)));
         public static final RegistryObject<Block> BLACK_SWAN_SWIMMING_RING = registerWithItem("black_swan_swimming_ring", () ->
                 new SwimmingRingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.METAL).noOcclusion().strength(1.5F, 6.0F)));
 
@@ -220,17 +245,17 @@ public final class WhimsyRegistry {
 
         // Plushies
         public static final RegistryObject<Block> BIG_PANDA_PLUSHIE = registerWithItem("big_panda_plushie", () ->
-                new BigPandaBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.METAL).noOcclusion().strength(1.5F, 6.0F)));
+                new BigPandaBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOL).sound(SoundType.WOOL).noOcclusion().strength(1.5F, 6.0F)));
         public static final RegistryObject<Block> FUFU_PLUSHIE = registerWithItem("fufu_plushie", () ->
-                new PlushieBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.METAL).noOcclusion().strength(1.5F, 6.0F)));
+                new PlushieBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOL).sound(SoundType.WOOL).noOcclusion().strength(1.5F, 6.0F)));
         public static final RegistryObject<Block> FLOWER_PIG_PLUSHIE = registerWithItem("flower_pig_plushie", () ->
                 new PigPlushieBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.METAL).noOcclusion().strength(1.5F, 6.0F)));
         public static final RegistryObject<Block> GOLDEN_PIG_PLUSHIE = registerWithItem("golden_pig_plushie", () ->
                 new PigPlushieBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.METAL).noOcclusion().strength(1.5F, 6.0F)));
         public static final RegistryObject<Block> VOCAL_DOLL = registerWithItem("vocal_doll", () ->
-                new PlushieBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.METAL).noOcclusion().strength(1.5F, 6.0F)));
+                new PlushieBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOL).sound(SoundType.WOOL).noOcclusion().strength(1.5F, 6.0F)));
         public static final RegistryObject<Block> RED_VOCAL_DOLL = registerWithItem("red_vocal_doll", () ->
-                new PlushieBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.METAL).noOcclusion().strength(1.5F, 6.0F)));
+                new PlushieBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOL).sound(SoundType.WOOL).noOcclusion().strength(1.5F, 6.0F)));
 
         // Tile Blocks
         public static final RegistryObject<Block> CLASSIC_TILE = registerWithItem("classic_tile", () ->
@@ -239,7 +264,7 @@ public final class WhimsyRegistry {
                 new Block(BlockBehaviour.Properties.of().mapColor(MapColor.STONE).sound(SoundType.STONE).noOcclusion().strength(1.5F, 6.0F)));
 
         private static RegistryObject<Block> registerWithItem(final String name, final Supplier<Block> supplier) {
-            return registerWithItem(name, supplier, ItemReg::registerBlockItem);
+            return registerWithItem(name, supplier, ItemRegistry::registerBlockItem);
         }
 
         private static RegistryObject<Block> registerWithItem(final String name, final Supplier<Block> blockSupplier, final Function<RegistryObject<Block>, RegistryObject<Item>> itemSupplier) {
@@ -253,7 +278,25 @@ public final class WhimsyRegistry {
         }
     }
 
-    public static final class ItemReg {
+    public static final class BlockEntityRegistry {
+        private static void register() {
+            BLOCK_ENTITY_TYPES.register(FMLJavaModLoadingContext.get().getModEventBus());
+        }
+
+        public static final RegistryObject<BlockEntityType<CowbellBlockEntity>> COWBELL = BLOCK_ENTITY_TYPES.register("cowbell",
+                () -> BlockEntityType.Builder.of(CowbellBlockEntity::new, BlockRegistry.COWBELL.get()).build(null));
+
+        public static final RegistryObject<BlockEntityType<LuckyCatBlockEntity>> LUCKY_CAT = BLOCK_ENTITY_TYPES.register("lucky_cat",
+                () -> BlockEntityType.Builder.of(LuckyCatBlockEntity::new, BlockRegistry.LUCKY_CAT.get()).build(null));
+        public static final RegistryObject<BlockEntityType<GoldLuckyCatBlockEntity>> GOLD_LUCKY_CAT = BLOCK_ENTITY_TYPES.register("gold_lucky_cat",
+                () -> BlockEntityType.Builder.of(GoldLuckyCatBlockEntity::new, BlockRegistry.GOLD_LUCKY_CAT.get()).build(null));
+
+        public static final RegistryObject<BlockEntityType<SingingFrogBlockEntity>> SINGING_FROG = BLOCK_ENTITY_TYPES.register("singing_frog",
+                () -> BlockEntityType.Builder.of(SingingFrogBlockEntity::new, BlockRegistry.SINGING_FROG.get()).build(null));
+    }
+
+
+    public static final class ItemRegistry {
 
         private static final List<RegistryObject<Item>> ALL_ITEMS = new ArrayList<>();
 
@@ -293,11 +336,11 @@ public final class WhimsyRegistry {
 
         public static final RegistryObject<CreativeModeTab> TAB = CREATIVE_MODE_TABS.register("tab", () ->
                 CreativeModeTab.builder()
-                        .icon(Suppliers.memoize(() -> new ItemStack(BlockReg.BLUE_TOY_PLANE.get())))
+                        .icon(Suppliers.memoize(() -> new ItemStack(BlockRegistry.BLUE_TOY_PLANE.get())))
                         .title(Component.translatable("itemGroup." + WhimsyDeco.MODID))
                         .withSearchBar()
                         .displayItems((parameters, output) ->
-                                output.acceptAll(ItemReg.ALL_ITEMS
+                                output.acceptAll(ItemRegistry.ALL_ITEMS
                                         .stream()
                                         .map(o -> new ItemStack(o.get()))
                                         .toList())
