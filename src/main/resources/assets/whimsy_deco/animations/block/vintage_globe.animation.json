@@ -1,0 +1,27 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"spin": {
+			"animation_length": 4.6667,
+			"bones": {
+				"bone": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"4.0": {
+							"vector": [0, -5772, 0],
+							"easing": "easeOutQuad"
+						},
+						"4.5833": {
+							"vector": [0, -5760, 0],
+							"easing": "easeOutBack",
+							"easingArgs": [1.5]
+						}
+					}
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}

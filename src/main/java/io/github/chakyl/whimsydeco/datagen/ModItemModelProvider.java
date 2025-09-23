@@ -118,12 +118,22 @@ public class ModItemModelProvider extends ItemModelProvider {
         itemModel(WhimsyRegistry.BlockRegistry.CAST_IRON_LEDGE);
         itemModel(WhimsyRegistry.BlockRegistry.BROOM);
         itemModel(WhimsyRegistry.BlockRegistry.PUSH_BROOM);
+        itemModel(WhimsyRegistry.BlockRegistry.RECORDER);
+        itemModelDisplay(WhimsyRegistry.BlockRegistry.RATTAN_SOFA);
+        itemModel(WhimsyRegistry.BlockRegistry.YELLOW_LIFE_PRESERVER_RING);
+        itemModel(WhimsyRegistry.BlockRegistry.RED_LIFE_PRESERVER_RING);
+        itemModel(WhimsyRegistry.BlockRegistry.ORANGE_LIFE_PRESERVER_RING);
+        itemModel(WhimsyRegistry.BlockRegistry.BLUE_LIFE_PRESERVER_RING);
 
         // Animated
         itemModel(WhimsyRegistry.BlockRegistry.COWBELL);
+        itemModel(WhimsyRegistry.BlockRegistry.BRONZE_COWBELL);
         itemModel(WhimsyRegistry.BlockRegistry.LUCKY_CAT);
         itemModel(WhimsyRegistry.BlockRegistry.GOLD_LUCKY_CAT);
         itemModel(WhimsyRegistry.BlockRegistry.SINGING_FROG);
+        itemModel(WhimsyRegistry.BlockRegistry.FAN);
+        itemModel(WhimsyRegistry.BlockRegistry.VINTAGE_GLOBE);
+        itemModel(WhimsyRegistry.BlockRegistry.ANTIQUE_VINTAGE_GLOBE);
     }
 
     public void itemModel(RegistryObject<Block> block) {

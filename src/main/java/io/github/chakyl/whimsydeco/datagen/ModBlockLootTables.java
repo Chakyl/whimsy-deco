@@ -118,12 +118,22 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         generateDropSelf(WhimsyRegistry.BlockRegistry.CAST_IRON_TRAPDOOR);
         generateDropSelf(WhimsyRegistry.BlockRegistry.BROOM);
         generateDropSelf(WhimsyRegistry.BlockRegistry.PUSH_BROOM);
+        generateDropSelf(WhimsyRegistry.BlockRegistry.RECORDER);
+        generateDropSelf(WhimsyRegistry.BlockRegistry.RATTAN_SOFA);
+        generateDropSelf(WhimsyRegistry.BlockRegistry.YELLOW_LIFE_PRESERVER_RING);
+        generateDropSelf(WhimsyRegistry.BlockRegistry.RED_LIFE_PRESERVER_RING);
+        generateDropSelf(WhimsyRegistry.BlockRegistry.ORANGE_LIFE_PRESERVER_RING);
+        generateDropSelf(WhimsyRegistry.BlockRegistry.BLUE_LIFE_PRESERVER_RING);
 
         // Animated
         generateDropSelf(WhimsyRegistry.BlockRegistry.COWBELL);
+        generateDropSelf(WhimsyRegistry.BlockRegistry.BRONZE_COWBELL);
         generateDropSelf(WhimsyRegistry.BlockRegistry.LUCKY_CAT);
         generateDropSelf(WhimsyRegistry.BlockRegistry.GOLD_LUCKY_CAT);
         generateDropSelf(WhimsyRegistry.BlockRegistry.SINGING_FROG);
+        generateDropSelf(WhimsyRegistry.BlockRegistry.FAN);
+        generateDropSelf(WhimsyRegistry.BlockRegistry.VINTAGE_GLOBE);
+        generateDropSelf(WhimsyRegistry.BlockRegistry.ANTIQUE_VINTAGE_GLOBE);
 
     }
 

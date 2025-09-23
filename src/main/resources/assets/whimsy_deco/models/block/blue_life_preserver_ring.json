@@ -1,0 +1,7 @@
+{
+  "parent": "whimsy_deco:block/yellow_life_preserver_ring",
+  "textures": {
+    "0": "whimsy_deco:block/life_preserver_ring_blue",
+    "particle": "whimsy_deco:block/life_preserver_ring_blue"
+  }
+}

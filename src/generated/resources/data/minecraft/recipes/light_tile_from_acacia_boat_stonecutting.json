@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 8,
+  "ingredient": {
+    "item": "minecraft:acacia_boat"
+  },
+  "result": "whimsy_deco:light_tile"
+}

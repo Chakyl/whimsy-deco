@@ -19,7 +19,6 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.Nullable;
 
 public class CowbellBlock extends RotatingBlock implements EntityBlock {
-
     public static final VoxelShape SHAPE =  box(3, 6, 5, 13, 16, 11);
 
     public CowbellBlock(Properties props) {
@@ -40,7 +39,6 @@ public class CowbellBlock extends RotatingBlock implements EntityBlock {
     public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
         BlockEntity entity = pLevel.getBlockEntity(pPos);
         if (entity instanceof CowbellBlockEntity) {
-
             ((CowbellBlockEntity) entity).stopTriggeredAnimation("controller", "bell");
             ((CowbellBlockEntity) entity).triggerAnim("controller", "bell");
             pLevel.playSound((Player)null, pPos, SoundEvents.BELL_BLOCK, SoundSource.BLOCKS, 2.0F, 1.0F);

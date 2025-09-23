@@ -1,0 +1,38 @@
+{
+  "variants": {
+    "wall=false,facing=north": {
+      "model": "whimsy_deco:block/red_life_preserver_ring"
+    },
+    "wall=true,facing=north": {
+      "model": "whimsy_deco:block/red_life_preserver_ring",
+      "x": 90
+    },
+    "wall=false,facing=south": {
+      "model": "whimsy_deco:block/red_life_preserver_ring",
+      "y": 180
+    },
+    "wall=true,facing=south": {
+      "model": "whimsy_deco:block/red_life_preserver_ring",
+      "y": 180,
+      "x": 90
+    },
+    "wall=false,facing=east": {
+      "model": "whimsy_deco:block/red_life_preserver_ring",
+      "y": 90
+    },
+    "wall=true,facing=east": {
+      "model": "whimsy_deco:block/red_life_preserver_ring",
+      "y": 90,
+      "x": 90
+    },
+    "wall=false,facing=west": {
+      "model": "whimsy_deco:block/red_life_preserver_ring",
+      "y": 270
+    },
+    "wall=true,facing=west": {
+      "model": "whimsy_deco:block/red_life_preserver_ring",
+      "y": 270,
+      "x": 90
+    }
+  }
+}

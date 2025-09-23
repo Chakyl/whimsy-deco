@@ -123,11 +123,25 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
         generateBlockTags(WhimsyRegistry.BlockRegistry.CLASSIC_TILE);
         generateBlockTags(WhimsyRegistry.BlockRegistry.LIGHT_TILE);
 
+        generateBlockTags(WhimsyRegistry.BlockRegistry.CAST_IRON_LEDGE);
+        generateBlockTags(WhimsyRegistry.BlockRegistry.BROOM);
+        generateBlockTags(WhimsyRegistry.BlockRegistry.PUSH_BROOM);
+        generateBlockTags(WhimsyRegistry.BlockRegistry.RECORDER);
+        generateBlockTags(WhimsyRegistry.BlockRegistry.RATTAN_SOFA);
+        generateBlockTags(WhimsyRegistry.BlockRegistry.YELLOW_LIFE_PRESERVER_RING);
+        generateBlockTags(WhimsyRegistry.BlockRegistry.RED_LIFE_PRESERVER_RING);
+        generateBlockTags(WhimsyRegistry.BlockRegistry.ORANGE_LIFE_PRESERVER_RING);
+        generateBlockTags(WhimsyRegistry.BlockRegistry.BLUE_LIFE_PRESERVER_RING);
+
         // Animated
         generateBlockTags(WhimsyRegistry.BlockRegistry.COWBELL);
+        generateBlockTags(WhimsyRegistry.BlockRegistry.BRONZE_COWBELL);
         generateBlockTags(WhimsyRegistry.BlockRegistry.LUCKY_CAT);
         generateBlockTags(WhimsyRegistry.BlockRegistry.GOLD_LUCKY_CAT);
         generateBlockTags(WhimsyRegistry.BlockRegistry.SINGING_FROG);
+        generateBlockTags(WhimsyRegistry.BlockRegistry.FAN);
+        generateBlockTags(WhimsyRegistry.BlockRegistry.VINTAGE_GLOBE);
+        generateBlockTags(WhimsyRegistry.BlockRegistry.ANTIQUE_VINTAGE_GLOBE);
 
     }
 

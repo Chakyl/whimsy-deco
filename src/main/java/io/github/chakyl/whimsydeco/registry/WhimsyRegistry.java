@@ -2,10 +2,7 @@ package io.github.chakyl.whimsydeco.registry;
 
 import com.google.common.base.Suppliers;
 import io.github.chakyl.whimsydeco.WhimsyDeco;
-import io.github.chakyl.whimsydeco.blockentities.CowbellBlockEntity;
-import io.github.chakyl.whimsydeco.blockentities.GoldLuckyCatBlockEntity;
-import io.github.chakyl.whimsydeco.blockentities.LuckyCatBlockEntity;
-import io.github.chakyl.whimsydeco.blockentities.SingingFrogBlockEntity;
+import io.github.chakyl.whimsydeco.blockentities.*;
 import io.github.chakyl.whimsydeco.blocks.*;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.registries.Registries;
@@ -115,6 +112,8 @@ public final class WhimsyRegistry {
         // Cowbell
         public static final RegistryObject<Block> COWBELL = registerWithItem("cowbell", () ->
                 new CowbellBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.COPPER).noOcclusion().strength(1.5F, 6.0F)));
+        public static final RegistryObject<Block> BRONZE_COWBELL = registerWithItem("bronze_cowbell", () ->
+                new BronzeCowbellBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.COPPER).noOcclusion().strength(1.5F, 6.0F)));
 
         // Dartboard
         public static final RegistryObject<Block> DARTBOARD = registerWithItem("dartboard", () ->
@@ -127,6 +126,10 @@ public final class WhimsyRegistry {
                 new DeskMirrorBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).sound(SoundType.WOOD).noOcclusion().strength(1.5F, 6.0F)));
         public static final RegistryObject<Block> DARK_OAK_DESK_MIRROR = registerWithItem("dark_oak_desk_mirror", () ->
                 new DeskMirrorBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).sound(SoundType.WOOD).noOcclusion().strength(1.5F, 6.0F)));
+
+        // Fan
+        public static final RegistryObject<Block> FAN = registerWithItem("fan", () ->
+                new FanBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.COPPER).noOcclusion().strength(1.5F, 6.0F)));
 
         // Froggy Chair
         public static final RegistryObject<Block> FROGGY_CHAIR = registerWithItem("froggy_chair", () ->
@@ -169,6 +172,17 @@ public final class WhimsyRegistry {
         public static final RegistryObject<Block> MATRYOSHKA_DOLL = registerWithItem("matryoshka_doll", () ->
                 new MatryoshkaBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.METAL).noOcclusion().strength(1.5F, 6.0F)));
 
+        // Life Preserver Block
+        public static final RegistryObject<Block> RED_LIFE_PRESERVER_RING = registerWithItem("red_life_preserver_ring", () ->
+                new LifePreserverRingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.METAL).noOcclusion().strength(1.5F, 6.0F)));
+        public static final RegistryObject<Block> ORANGE_LIFE_PRESERVER_RING = registerWithItem("orange_life_preserver_ring", () ->
+                new LifePreserverRingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.METAL).noOcclusion().strength(1.5F, 6.0F)));
+        public static final RegistryObject<Block> YELLOW_LIFE_PRESERVER_RING = registerWithItem("yellow_life_preserver_ring", () ->
+                new LifePreserverRingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.METAL).noOcclusion().strength(1.5F, 6.0F)));
+        public static final RegistryObject<Block> BLUE_LIFE_PRESERVER_RING = registerWithItem("blue_life_preserver_ring", () ->
+                new LifePreserverRingBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.METAL).noOcclusion().strength(1.5F, 6.0F)));
+
+
         // Lucky Cat
         public static final RegistryObject<Block> LUCKY_CAT = registerWithItem("lucky_cat", () ->
                 new LuckyCatBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.COPPER).noOcclusion().strength(1.5F, 6.0F)));
@@ -205,9 +219,17 @@ public final class WhimsyRegistry {
         public static final RegistryObject<Block> WARPED_RATTAN_CHAIR = registerWithItem("warped_rattan_chair", () ->
                 new RattanChairBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).sound(SoundType.NETHER_WOOD).noOcclusion().strength(1.5F, 6.0F)));
 
+        // Rattan Sofa
+        public static final RegistryObject<Block> RATTAN_SOFA = registerWithItem("rattan_sofa", () ->
+                new SofaBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).sound(SoundType.BAMBOO_WOOD).noOcclusion().strength(1.5F, 6.0F)));
+
         // Rattan Stool
         public static final RegistryObject<Block> RATTAN_STOOL = registerWithItem("rattan_stool", () ->
                 new RattanStoolBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).sound(SoundType.BAMBOO_WOOD).noOcclusion().strength(1.5F, 6.0F)));
+
+        // Recorder
+        public static final RegistryObject<Block> RECORDER = registerWithItem("recorder", () ->
+                new RecorderBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.COPPER).noOcclusion().strength(1.5F, 6.0F)));
 
         // Rubber Duck
         public static final RegistryObject<Block> RUBBER_DUCK = registerWithItem("rubber_duck", () ->
@@ -215,7 +237,7 @@ public final class WhimsyRegistry {
 
         // Ship Helm
         public static final RegistryObject<Block> SHIP_HELM = registerWithItem("ship_helm", () ->
-                new ShipHelmBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.WOOD).strength(1.5F, 6.0F)));
+                new ShipHelmBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.WOOD).noOcclusion().strength(1.5F, 6.0F)));
 
         // Shower
         public static final RegistryObject<Block> SHOWER = registerWithItem("shower", () ->
@@ -254,6 +276,12 @@ public final class WhimsyRegistry {
         // Traffic Cone
         public static final RegistryObject<Block> TRAFFIC_CONE = registerWithItem("traffic_cone", () ->
                 new TrafficConeBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.SHROOMLIGHT).noOcclusion().strength(1.5F, 6.0F)));
+
+        // Vintage Globe
+        public static final RegistryObject<Block> VINTAGE_GLOBE = registerWithItem("vintage_globe", () ->
+                new VintageGlobeBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.WOOD).noOcclusion().strength(1.5F, 6.0F)));
+        public static final RegistryObject<Block> ANTIQUE_VINTAGE_GLOBE = registerWithItem("antique_vintage_globe", () ->
+                new AntiqueVintageGlobeBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.WOOD).noOcclusion().strength(1.5F, 6.0F)));
 
         // Washing Machine
         public static final RegistryObject<Block> WASHING_MACHINE = registerWithItem("washing_machine", () ->
@@ -301,6 +329,8 @@ public final class WhimsyRegistry {
 
         public static final RegistryObject<BlockEntityType<CowbellBlockEntity>> COWBELL = BLOCK_ENTITY_TYPES.register("cowbell",
                 () -> BlockEntityType.Builder.of(CowbellBlockEntity::new, BlockRegistry.COWBELL.get()).build(null));
+        public static final RegistryObject<BlockEntityType<BronzeCowbellBlockEntity>> BRONZE_COWBELL = BLOCK_ENTITY_TYPES.register("bronze_cowbell",
+                () -> BlockEntityType.Builder.of(BronzeCowbellBlockEntity::new, BlockRegistry.BRONZE_COWBELL.get()).build(null));
 
         public static final RegistryObject<BlockEntityType<LuckyCatBlockEntity>> LUCKY_CAT = BLOCK_ENTITY_TYPES.register("lucky_cat",
                 () -> BlockEntityType.Builder.of(LuckyCatBlockEntity::new, BlockRegistry.LUCKY_CAT.get()).build(null));
@@ -309,6 +339,14 @@ public final class WhimsyRegistry {
 
         public static final RegistryObject<BlockEntityType<SingingFrogBlockEntity>> SINGING_FROG = BLOCK_ENTITY_TYPES.register("singing_frog",
                 () -> BlockEntityType.Builder.of(SingingFrogBlockEntity::new, BlockRegistry.SINGING_FROG.get()).build(null));
+
+        public static final RegistryObject<BlockEntityType<FanBlockEntity>> FAN = BLOCK_ENTITY_TYPES.register("fan",
+                () -> BlockEntityType.Builder.of(FanBlockEntity::new, BlockRegistry.FAN.get()).build(null));
+
+        public static final RegistryObject<BlockEntityType<VintageGlobeBlockEntity>> VINTAGE_GLOBE = BLOCK_ENTITY_TYPES.register("vintage_globe",
+                () -> BlockEntityType.Builder.of(VintageGlobeBlockEntity::new, BlockRegistry.VINTAGE_GLOBE.get()).build(null));
+        public static final RegistryObject<BlockEntityType<AntiqueVintageGlobeBlockEntity>> ANTIQUE_VINTAGE_GLOBE = BLOCK_ENTITY_TYPES.register("antique_vintage_globe",
+                () -> BlockEntityType.Builder.of(AntiqueVintageGlobeBlockEntity::new, BlockRegistry.ANTIQUE_VINTAGE_GLOBE.get()).build(null));
     }
 
 

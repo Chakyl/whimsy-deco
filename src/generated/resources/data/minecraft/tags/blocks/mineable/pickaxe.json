@@ -41,9 +41,22 @@
     "whimsy_deco:washing_machine",
     "whimsy_deco:classic_tile",
     "whimsy_deco:light_tile",
+    "whimsy_deco:cast_iron_ledge",
+    "whimsy_deco:broom",
+    "whimsy_deco:push_broom",
+    "whimsy_deco:recorder",
+    "whimsy_deco:rattan_sofa",
+    "whimsy_deco:yellow_life_preserver_ring",
+    "whimsy_deco:red_life_preserver_ring",
+    "whimsy_deco:orange_life_preserver_ring",
+    "whimsy_deco:blue_life_preserver_ring",
     "whimsy_deco:cowbell",
+    "whimsy_deco:bronze_cowbell",
     "whimsy_deco:lucky_cat",
     "whimsy_deco:gold_lucky_cat",
-    "whimsy_deco:singing_frog"
+    "whimsy_deco:singing_frog",
+    "whimsy_deco:fan",
+    "whimsy_deco:vintage_globe",
+    "whimsy_deco:antique_vintage_globe"
   ]
 }
