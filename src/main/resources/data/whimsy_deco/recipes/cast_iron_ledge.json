@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "AAA",
+    "S S",
+    "   "
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:iron_ingot"
+    },
+    "S": {
+      "item": "minecraft:iron_nugget"
+    }
+  },
+  "result": {
+    "item": "whimsy_deco:cast_iron_ledge",
+    "count": 1
+  },
+  "show_notification": true
+}

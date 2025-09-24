@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "AAA",
+    "ASA",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:blackstone"
+    },
+    "S": {
+      "item": "minecraft:quartz_block"
+    }
+  },
+  "result": {
+    "item": "whimsy_deco:dartboard",
+    "count": 1
+  },
+  "show_notification": true
+}

@@ -1,5 +1,6 @@
 package io.github.chakyl.whimsydeco.blocks;
 
+import io.github.chakyl.whimsydeco.WhimsyDeco;
 import io.github.chakyl.whimsydeco.blocks.bases.RotatingBlock;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -36,13 +37,13 @@ public class BathroomRackBlock extends RotatingBlock {
 
     @Override
     public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
-        if (pHand == InteractionHand.MAIN_HAND) {
+        if (pHand == InteractionHand.MAIN_HAND && !pLevel.isClientSide()) {
             boolean paper = pState.getValue(TOILET_PAPER);
             boolean towel = pState.getValue(TOWEL);
-            if (!towel && pPlayer.getItemInHand(pHand).getItem() == Items.PAPER) {
+            if (!towel && !paper && pPlayer.getItemInHand(pHand).getItem() == Items.PAPER) {
                 pLevel.setBlockAndUpdate(pPos, pState.setValue(TOILET_PAPER, true));
                 pPlayer.getItemInHand(pHand).shrink(1);
-            } else if (!paper && pPlayer.getItemInHand(pHand).getItem() == Items.WHITE_CARPET) {
+            } else if (!towel && !paper && pPlayer.getItemInHand(pHand).getItem() == Items.WHITE_CARPET) {
                 pLevel.setBlockAndUpdate(pPos, pState.setValue(TOWEL, true));
                 pPlayer.getItemInHand(pHand).shrink(1);
             } else if (pPlayer.isCrouching() && pPlayer.getItemInHand(pHand).isEmpty()) {
@@ -53,7 +54,7 @@ public class BathroomRackBlock extends RotatingBlock {
                     pPlayer.addItem(Items.WHITE_CARPET.getDefaultInstance());
                     pLevel.setBlockAndUpdate(pPos, pState.setValue(TOWEL, false));
                 }
-            }
+            } else return InteractionResult.PASS;
         }
         return InteractionResult.SUCCESS;
     }

@@ -5,14 +5,17 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import software.bernie.geckolib.animatable.GeoBlockEntity;
-import software.bernie.geckolib.core.animatable.GeoAnimatable;
 import software.bernie.geckolib.core.animatable.instance.AnimatableInstanceCache;
-import software.bernie.geckolib.core.animation.*;
+import software.bernie.geckolib.core.animation.AnimatableManager;
+import software.bernie.geckolib.core.animation.AnimationController;
+import software.bernie.geckolib.core.animation.RawAnimation;
 import software.bernie.geckolib.core.object.PlayState;
 import software.bernie.geckolib.util.GeckoLibUtil;
 
+import static io.github.chakyl.whimsydeco.blocks.FanBlock.ON;
+
 public class FanBlockEntity extends BlockEntity implements GeoBlockEntity {
-    protected static final RawAnimation DEPLOY_ANIM = RawAnimation.begin().thenPlay("fanloop").thenLoop("fanloop");
+    protected static final RawAnimation FAN = RawAnimation.begin().thenPlay("fanloop").thenLoop("fanloop");
 
     private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
 
@@ -21,15 +24,9 @@ public class FanBlockEntity extends BlockEntity implements GeoBlockEntity {
     }
 
     @Override
-    public void registerControllers(AnimatableManager.ControllerRegistrar controllerRegistrar) {
-        controllerRegistrar.add(new AnimationController<>(this, "controller", 0, this::predicate));
+    public void registerControllers(AnimatableManager.ControllerRegistrar controllers) {
+        controllers.add(new AnimationController(this, (state) -> ((FanBlockEntity) state.getAnimatable()).getBlockState().getValue(ON) ? state.setAndContinue(FAN) : PlayState.STOP));
     }
-
-    private <T extends GeoAnimatable> PlayState predicate(AnimationState<T> tAnimationState) {
-        tAnimationState.getController().setAnimation(RawAnimation.begin().then("fanloop", Animation.LoopType.LOOP));
-        return PlayState.CONTINUE;
-    }
-
 
     @Override
     public AnimatableInstanceCache getAnimatableInstanceCache() {

@@ -1,9 +1,11 @@
 package io.github.chakyl.whimsydeco.datagen;
 
+import io.github.chakyl.whimsydeco.blocks.bases.RotatingTallBlock;
 import io.github.chakyl.whimsydeco.registry.WhimsyRegistry;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.util.Set;
@@ -15,11 +17,11 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
-        generateDropSelf(WhimsyRegistry.BlockRegistry.BLACK_ATM);
-        generateDropSelf(WhimsyRegistry.BlockRegistry.GREEN_ATM);
-        generateDropSelf(WhimsyRegistry.BlockRegistry.RED_ATM);
-        generateDropSelf(WhimsyRegistry.BlockRegistry.YELLOW_ATM);
-        generateDropSelf(WhimsyRegistry.BlockRegistry.BLUE_ATM);
+        generateDropSelfTall(WhimsyRegistry.BlockRegistry.BLACK_ATM);
+        generateDropSelfTall(WhimsyRegistry.BlockRegistry.GREEN_ATM);
+        generateDropSelfTall(WhimsyRegistry.BlockRegistry.RED_ATM);
+        generateDropSelfTall(WhimsyRegistry.BlockRegistry.YELLOW_ATM);
+        generateDropSelfTall(WhimsyRegistry.BlockRegistry.BLUE_ATM);
 
         generateDropSelf(WhimsyRegistry.BlockRegistry.BAMBOO_CANDLE);
 
@@ -43,13 +45,13 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         generateDropSelf(WhimsyRegistry.BlockRegistry.DARTBOARD);
 
 
-        generateDropSelf(WhimsyRegistry.BlockRegistry.FROGGY_CHAIR);
-        generateDropSelf(WhimsyRegistry.BlockRegistry.YELLOW_FROGGY_CHAIR);
-        generateDropSelf(WhimsyRegistry.BlockRegistry.PINK_FROGGY_CHAIR);
-        generateDropSelf(WhimsyRegistry.BlockRegistry.ORANGE_FROGGY_CHAIR);
-        generateDropSelf(WhimsyRegistry.BlockRegistry.BLUE_FROGGY_CHAIR);
+        generateDropSelfTall(WhimsyRegistry.BlockRegistry.FROGGY_CHAIR);
+        generateDropSelfTall(WhimsyRegistry.BlockRegistry.YELLOW_FROGGY_CHAIR);
+        generateDropSelfTall(WhimsyRegistry.BlockRegistry.PINK_FROGGY_CHAIR);
+        generateDropSelfTall(WhimsyRegistry.BlockRegistry.ORANGE_FROGGY_CHAIR);
+        generateDropSelfTall(WhimsyRegistry.BlockRegistry.BLUE_FROGGY_CHAIR);
 
-        generateDropSelf(WhimsyRegistry.BlockRegistry.GATCHA_MACHINE);
+        generateDropSelfTall(WhimsyRegistry.BlockRegistry.GATCHA_MACHINE);
 
         generateDropSelf(WhimsyRegistry.BlockRegistry.GNOME);
         generateDropSelf(WhimsyRegistry.BlockRegistry.LANTERN_GNOME);
@@ -104,7 +106,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         generateDropSelf(WhimsyRegistry.BlockRegistry.WASHING_MACHINE);
 
-        generateDropSelf(WhimsyRegistry.BlockRegistry.BIG_PANDA_PLUSHIE);
+        generateDropSelfTall(WhimsyRegistry.BlockRegistry.BIG_PANDA_PLUSHIE);
         generateDropSelf(WhimsyRegistry.BlockRegistry.FUFU_PLUSHIE);
         generateDropSelf(WhimsyRegistry.BlockRegistry.FLOWER_PIG_PLUSHIE);
         generateDropSelf(WhimsyRegistry.BlockRegistry.GOLDEN_PIG_PLUSHIE);
@@ -116,10 +118,10 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         generateDropSelf(WhimsyRegistry.BlockRegistry.CAST_IRON_LEDGE);
         generateDropSelf(WhimsyRegistry.BlockRegistry.CAST_IRON_TRAPDOOR);
-        generateDropSelf(WhimsyRegistry.BlockRegistry.BROOM);
-        generateDropSelf(WhimsyRegistry.BlockRegistry.PUSH_BROOM);
+        generateDropSelfTall(WhimsyRegistry.BlockRegistry.BROOM);
+        generateDropSelfTall(WhimsyRegistry.BlockRegistry.PUSH_BROOM);
         generateDropSelf(WhimsyRegistry.BlockRegistry.RECORDER);
-        generateDropSelf(WhimsyRegistry.BlockRegistry.RATTAN_SOFA);
+        generateDropSelf(WhimsyRegistry.BlockRegistry.MOROCCAN_SOFA);
         generateDropSelf(WhimsyRegistry.BlockRegistry.YELLOW_LIFE_PRESERVER_RING);
         generateDropSelf(WhimsyRegistry.BlockRegistry.RED_LIFE_PRESERVER_RING);
         generateDropSelf(WhimsyRegistry.BlockRegistry.ORANGE_LIFE_PRESERVER_RING);
@@ -139,6 +141,10 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
     public void generateDropSelf(RegistryObject<Block> block) {
         this.dropSelf(block.get());
+    }
+
+    public void generateDropSelfTall(RegistryObject<Block> pBlock) {
+        add(pBlock.get(), block -> createSinglePropConditionTable(block, RotatingTallBlock.HALF, DoubleBlockHalf.LOWER));
     }
 
     @Override

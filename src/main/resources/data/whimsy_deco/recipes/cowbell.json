@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " A ",
+    "AAA",
+    "ASA"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:gold_ingot"
+    },
+    "S": {
+      "item": "minecraft:gold_nugget"
+    }
+  },
+  "result": {
+    "item": "whimsy_deco:cowbell",
+    "count": 1
+  },
+  "show_notification": true
+}

@@ -11,7 +11,7 @@
       "model": "whimsy_deco:block/cast_iron_trapdoor_top"
     },
     "facing=east,half=top,open=true": {
-      "model": "whimsy_deco:block/cast_iron_trapdoor_open",
+      "model": "whimsy_deco:block/cast_iron_trapdoor_top_open",
       "y": 90
     },
     "facing=north,half=bottom,open=false": {
@@ -24,7 +24,7 @@
       "model": "whimsy_deco:block/cast_iron_trapdoor_top"
     },
     "facing=north,half=top,open=true": {
-      "model": "whimsy_deco:block/cast_iron_trapdoor_open"
+      "model": "whimsy_deco:block/cast_iron_trapdoor_top_open"
     },
     "facing=south,half=bottom,open=false": {
       "model": "whimsy_deco:block/cast_iron_trapdoor_bottom"
@@ -37,7 +37,7 @@
       "model": "whimsy_deco:block/cast_iron_trapdoor_top"
     },
     "facing=south,half=top,open=true": {
-      "model": "whimsy_deco:block/cast_iron_trapdoor_open",
+      "model": "whimsy_deco:block/cast_iron_trapdoor_top_open",
       "y": 180
     },
     "facing=west,half=bottom,open=false": {
@@ -51,7 +51,7 @@
       "model": "whimsy_deco:block/cast_iron_trapdoor_top"
     },
     "facing=west,half=top,open=true": {
-      "model": "whimsy_deco:block/cast_iron_trapdoor_open",
+      "model": "whimsy_deco:block/cast_iron_trapdoor_top_open",
       "y": 270
     }
   }

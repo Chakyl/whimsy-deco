@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " A ",
+    " S ",
+    "   "
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:white_carpet"
+    },
+    "S": {
+      "item": "minecraft:lime_wool"
+    }
+  },
+  "result": {
+    "item": "whimsy_deco:green_stocking",
+    "count": 1
+  },
+  "show_notification": true
+}

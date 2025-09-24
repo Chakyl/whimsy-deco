@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "AAA",
+    "   ",
+    "   "
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "item": "whimsy_deco:cast_iron_trapdoor",
+    "count": 1
+  },
+  "show_notification": true
+}

@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ASS",
+    "SDS",
+    "FFF"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:paper"
+    },
+    "S": {
+      "item": "minecraft:iron_ingot"
+    },
+    "D": {
+      "item": "minecraft:redstone"
+    },
+    "F": {
+      "tag": "forge:stone"
+    }
+  },
+  "result": {
+    "item": "whimsy_deco:cash_register",
+    "count": 1
+  },
+  "show_notification": true
+}

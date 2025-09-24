@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "A A",
+    "ASA",
+    "A A"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:bamboo_planks"
+    },
+    "S": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "result": {
+    "item": "whimsy_deco:caution_floor_sign",
+    "count": 1
+  },
+  "show_notification": true
+}

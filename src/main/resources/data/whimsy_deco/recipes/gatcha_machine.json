@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "AAA",
+    "SDG",
+    "AFA"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:iron_ingot"
+    },
+    "S": {
+      "item": "minecraft:redstone"
+    },
+    "D": {
+      "item": "minecraft:egg"
+    },
+    "F": {
+      "item": "minecraft:stone_button"
+    },
+    "G": {
+      "item": "minecraft:glass"
+    }
+  },
+  "result": {
+    "item": "whimsy_deco:gatcha_machine",
+    "count": 1
+  },
+  "show_notification": true
+}

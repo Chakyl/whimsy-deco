@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ASS",
+    "ASS",
+    "DDD"
+  ],
+  "key": {
+    "A": {
+      "tag": "forge:fences/wooden"
+    },
+    "S": {
+      "item": "minecraft:vine"
+    },
+    "D": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "result": {
+    "item": "whimsy_deco:vine_rattan_chair",
+    "count": 1
+  },
+  "show_notification": true
+}

@@ -15,13 +15,11 @@ import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
 public class CurioCashRegisterBlock extends CashRegisterBlock {
-    public static final VoxelShape SHAPE = box(3, 0, 0, 16, 16, 14);
+    public static final VoxelShape SHAPE = box(2, 0, 2, 16, 16, 16);
 
 
     public CurioCashRegisterBlock(Properties props) {
         super(props, SHAPE);
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(OPEN, false).setValue(WATERLOGGED, false));
     }
-
-
 }

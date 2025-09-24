@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " A ",
+    " S ",
+    " D "
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:stick"
+    },
+    "S": {
+      "tag": "minecraft:wooden_slabs"
+    },
+    "D": {
+      "item": "minecraft:wheat"
+    }
+  },
+  "result": {
+    "item": "whimsy_deco:push_broom",
+    "count": 1
+  },
+  "show_notification": true
+}

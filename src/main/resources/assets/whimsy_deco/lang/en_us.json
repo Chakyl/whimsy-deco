@@ -94,10 +94,32 @@
   "block.whimsy_deco.blue_toy_plane": "Blue Toy Plane",
 
   "block.whimsy_deco.cowbell": "Cowbell",
+  "block.whimsy_deco.bronze_cowbell": "Bronze Cowbell",
   "block.whimsy_deco.lucky_cat": "Lucky Cat",
   "block.whimsy_deco.gold_lucky_cat": "Golden Lucky Cat",
   "block.whimsy_deco.singing_frog": "Singing Frog",
+  "block.whimsy_deco.fan": "Fan",
+  "block.whimsy_deco.vintage_globe": "Vintage Globe",
+  "block.whimsy_deco.antique_vintage_globe": "Antique Vintage Globe",
 
   "block.whimsy_deco.classic_tile": "Black Monochrome Bricks",
-  "block.whimsy_deco.light_tile": "Monochrome Bricks"
+  "block.whimsy_deco.light_tile": "Monochrome Bricks",
+
+  "block.whimsy_deco.cast_iron_ledge": "Cast Iron Ledge",
+  "block.whimsy_deco.broom": "Broom",
+  "block.whimsy_deco.push_broom": "Push Broom",
+  "block.whimsy_deco.recorder": "Recorder",
+  "block.whimsy_deco.moroccan_sofa": "Moroccan Sofa",
+  "block.whimsy_deco.yellow_life_preserver_ring": "Yellow Life Preserver Ring", 
+  "block.whimsy_deco.red_life_preserver_ring": "Red Life Preserver Ring", 
+  "block.whimsy_deco.orange_life_preserver_ring": "Orange Life Preserver Ring", 
+  "block.whimsy_deco.blue_life_preserver_ring": "Blue Life Preserver Ring",
+
+  "item.whimsy_deco.gatcha_capsule": "Gatcha Capsule",
+
+  "jei.whimsy_deco.category.gatcha_opening": "Gatcha Opening",
+  "jei.whimsy_deco.category.purchasing": "Purchasing",
+
+  "subtitle.block.whimsy_deco.squeak": "Squeak!",
+  "subtitle.block.whimsy_deco.kaching": "Ka-Ching!"
 }

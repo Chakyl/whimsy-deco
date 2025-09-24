@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "SAS",
+    "   ",
+    "   "
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:stick"
+    },
+    "S": {
+      "item": "minecraft:oak_planks"
+    }
+  },
+  "result": {
+    "item": "whimsy_deco:bathroom_rack",
+    "count": 1
+  },
+  "show_notification": true
+}

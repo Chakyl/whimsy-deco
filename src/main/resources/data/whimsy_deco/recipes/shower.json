@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "A A",
+    "AAA",
+    "S D"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:iron_ingot"
+    },
+    "S": {
+      "item": "minecraft:stone_button"
+    },
+    "D": {
+      "item": "minecraft:chain"
+    }
+  },
+  "result": {
+    "item": "whimsy_deco:shower",
+    "count": 1
+  },
+  "show_notification": true
+}

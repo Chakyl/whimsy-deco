@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "whimsy_deco:paper_lantern"
+    },
+    {
+      "item": "minecraft:bamboo"
+    }
+  ],
+  "result": {
+    "item": "whimsy_deco:bamboo_framed_paper_lantern",
+    "count": 1
+  },
+  "show_notification": true
+}

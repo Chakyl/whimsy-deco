@@ -1,33 +1,63 @@
 {
   "variants": {
-    "leaning=false,facing=north": {
-      "model": "whimsy_deco:block/push_broom"
+    "leaning=false,facing=north,half=upper": {
+      "model": "whimsy_deco:block/push_broom/upper"
     },
-    "leaning=true,facing=north": {
-      "model": "whimsy_deco:block/push_broom_leaning"
+    "leaning=true,facing=north,half=upper": {
+      "model": "whimsy_deco:block/push_broom/leaning_upper"
     },
-    "leaning=false,facing=south": {
-      "model": "whimsy_deco:block/push_broom",
+    "leaning=false,facing=south,half=upper": {
+      "model": "whimsy_deco:block/push_broom/upper",
       "y": 180
     },
-    "leaning=true,facing=south": {
-      "model": "whimsy_deco:block/push_broom_leaning",
+    "leaning=true,facing=south,half=upper": {
+      "model": "whimsy_deco:block/push_broom/leaning_upper",
       "y": 180
     },
-    "leaning=false,facing=east": {
-      "model": "whimsy_deco:block/push_broom",
+    "leaning=false,facing=east,half=upper": {
+      "model": "whimsy_deco:block/push_broom/upper",
       "y": 90
     },
-    "leaning=true,facing=east": {
-      "model": "whimsy_deco:block/push_broom_leaning",
+    "leaning=true,facing=east,half=upper": {
+      "model": "whimsy_deco:block/push_broom/leaning_upper",
       "y": 90
     },
-    "leaning=false,facing=west": {
-      "model": "whimsy_deco:block/push_broom",
+    "leaning=false,facing=west,half=upper": {
+      "model": "whimsy_deco:block/push_broom/upper",
       "y": 270
     },
-    "leaning=true,facing=west": {
-      "model": "whimsy_deco:block/push_broom_leaning",
+    "leaning=true,facing=west,half=upper": {
+      "model": "whimsy_deco:block/push_broom/leaning_upper",
+      "y": 270
+    },
+    "leaning=false,facing=north,half=lower": {
+      "model": "whimsy_deco:block/push_broom/lower"
+    },
+    "leaning=true,facing=north,half=lower": {
+      "model": "whimsy_deco:block/push_broom/lower_leaning"
+    },
+    "leaning=false,facing=south,half=lower": {
+      "model": "whimsy_deco:block/push_broom/lower",
+      "y": 180
+    },
+    "leaning=true,facing=south,half=lower": {
+      "model": "whimsy_deco:block/push_broom/lower_leaning",
+      "y": 180
+    },
+    "leaning=false,facing=east,half=lower": {
+      "model": "whimsy_deco:block/push_broom/lower",
+      "y": 90
+    },
+    "leaning=true,facing=east,half=lower": {
+      "model": "whimsy_deco:block/push_broom/lower_leaning",
+      "y": 90
+    },
+    "leaning=false,facing=west,half=lower": {
+      "model": "whimsy_deco:block/push_broom/lower",
+      "y": 270
+    },
+    "leaning=true,facing=west,half=lower": {
+      "model": "whimsy_deco:block/push_broom/lower_leaning",
       "y": 270
     }
   }

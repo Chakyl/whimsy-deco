@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ASA",
+    "ADA",
+    "AFA"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:paper"
+    },
+    "S": {
+      "item": "minecraft:iron_nugget"
+    },
+    "D": {
+      "item": "minecraft:torch"
+    },
+    "F": {
+      "tag": "minecraft:wooden_slabs"
+    }
+  },
+  "result": {
+    "item": "whimsy_deco:paper_lantern",
+    "count": 1
+  },
+  "show_notification": true
+}

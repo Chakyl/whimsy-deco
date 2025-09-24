@@ -127,7 +127,7 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
         generateBlockTags(WhimsyRegistry.BlockRegistry.BROOM);
         generateBlockTags(WhimsyRegistry.BlockRegistry.PUSH_BROOM);
         generateBlockTags(WhimsyRegistry.BlockRegistry.RECORDER);
-        generateBlockTags(WhimsyRegistry.BlockRegistry.RATTAN_SOFA);
+        generateBlockTags(WhimsyRegistry.BlockRegistry.MOROCCAN_SOFA);
         generateBlockTags(WhimsyRegistry.BlockRegistry.YELLOW_LIFE_PRESERVER_RING);
         generateBlockTags(WhimsyRegistry.BlockRegistry.RED_LIFE_PRESERVER_RING);
         generateBlockTags(WhimsyRegistry.BlockRegistry.ORANGE_LIFE_PRESERVER_RING);

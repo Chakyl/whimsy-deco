@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " A ",
+    " SD",
+    "   "
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "S": {
+      "item": "minecraft:netherite_block"
+    },
+    "D": {
+      "item": "minecraft:lever"
+    }
+  },
+  "result": {
+    "item": "whimsy_deco:black_curio_cash_register",
+    "count": 1
+  },
+  "show_notification": true
+}

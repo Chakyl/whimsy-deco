@@ -1,0 +1,64 @@
+{
+  "variants": {
+    "facing=north,type=display": {
+      "model": "whimsy_deco:block/moroccan_sofa/display"
+    },
+    "facing=south,type=display": {
+      "model": "whimsy_deco:block/moroccan_sofa/display",
+      "y": 180
+    },
+    "facing=east,type=display": {
+      "model": "whimsy_deco:block/moroccan_sofa/display",
+      "y": 90
+    },
+    "facing=west,type=display": {
+      "model": "whimsy_deco:block/moroccan_sofa/display",
+      "y": 270
+    },
+    "facing=north,type=left": {
+      "model": "whimsy_deco:block/moroccan_sofa/left"
+    },
+    "facing=south,type=left": {
+      "model": "whimsy_deco:block/moroccan_sofa/left",
+      "y": 180
+    },
+    "facing=east,type=left": {
+      "model": "whimsy_deco:block/moroccan_sofa/left",
+      "y": 90
+    },
+    "facing=west,type=left": {
+      "model": "whimsy_deco:block/moroccan_sofa/left",
+      "y": 270
+    },
+    "facing=north,type=right": {
+      "model": "whimsy_deco:block/moroccan_sofa/right"
+    },
+    "facing=south,type=right": {
+      "model": "whimsy_deco:block/moroccan_sofa/right",
+      "y": 180
+    },
+    "facing=east,type=right": {
+      "model": "whimsy_deco:block/moroccan_sofa/right",
+      "y": 90
+    },
+    "facing=west,type=right": {
+      "model": "whimsy_deco:block/moroccan_sofa/right",
+      "y": 270
+    },
+    "facing=north,type=middle": {
+      "model": "whimsy_deco:block/moroccan_sofa/middle"
+    },
+    "facing=south,type=middle": {
+      "model": "whimsy_deco:block/moroccan_sofa/middle",
+      "y": 180
+    },
+    "facing=east,type=middle": {
+      "model": "whimsy_deco:block/moroccan_sofa/middle",
+      "y": 90
+    },
+    "facing=west,type=middle": {
+      "model": "whimsy_deco:block/moroccan_sofa/middle",
+      "y": 270
+    }
+  }
+}

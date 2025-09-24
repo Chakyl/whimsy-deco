@@ -1,9 +1,11 @@
 package io.github.chakyl.whimsydeco.blocks;
 
 import io.github.chakyl.whimsydeco.blocks.bases.RotatingBlock;
+import io.github.chakyl.whimsydeco.registry.WhimsyRegistry;
 import io.github.chakyl.whimsydeco.util.ShapeBuilder;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
@@ -45,6 +47,7 @@ public class CashRegisterBlock extends RotatingBlock {
     @Override
     public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
         pLevel.setBlockAndUpdate(pPos, pState.setValue(OPEN, !pState.getValue(OPEN)));
+        if (!pState.getValue(OPEN)) pLevel.playSound((Player) null, pPlayer.getOnPos(), WhimsyRegistry.SoundRegistry.KACHING.get(), SoundSource.BLOCKS, 0.5F, 1.0F);
         return InteractionResult.SUCCESS;
     }
 

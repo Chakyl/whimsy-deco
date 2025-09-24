@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "whimsy_deco:paper_lantern"
+    },
+    {
+      "item": "minecraft:blue_dye"
+    }
+  ],
+  "result": {
+    "item": "whimsy_deco:blue_paper_lantern",
+    "count": 1
+  },
+  "show_notification": true
+}

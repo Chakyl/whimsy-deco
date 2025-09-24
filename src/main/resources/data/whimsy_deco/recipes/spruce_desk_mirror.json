@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " A ",
+    " S ",
+    "   "
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:glass_pane"
+    },
+    "S": {
+      "item": "minecraft:spruce_slab"
+    }
+  },
+  "result": {
+    "item": "whimsy_deco:spruce_desk_mirror",
+    "count": 1
+  },
+  "show_notification": true
+}

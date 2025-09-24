@@ -116,10 +116,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         itemModel(WhimsyRegistry.BlockRegistry.LIGHT_TILE);
 
         itemModel(WhimsyRegistry.BlockRegistry.CAST_IRON_LEDGE);
-        itemModel(WhimsyRegistry.BlockRegistry.BROOM);
-        itemModel(WhimsyRegistry.BlockRegistry.PUSH_BROOM);
+        itemModelDisplay(WhimsyRegistry.BlockRegistry.BROOM);
+        itemModelDisplay(WhimsyRegistry.BlockRegistry.PUSH_BROOM);
         itemModel(WhimsyRegistry.BlockRegistry.RECORDER);
-        itemModelDisplay(WhimsyRegistry.BlockRegistry.RATTAN_SOFA);
+        itemModelDisplay(WhimsyRegistry.BlockRegistry.MOROCCAN_SOFA);
         itemModel(WhimsyRegistry.BlockRegistry.YELLOW_LIFE_PRESERVER_RING);
         itemModel(WhimsyRegistry.BlockRegistry.RED_LIFE_PRESERVER_RING);
         itemModel(WhimsyRegistry.BlockRegistry.ORANGE_LIFE_PRESERVER_RING);

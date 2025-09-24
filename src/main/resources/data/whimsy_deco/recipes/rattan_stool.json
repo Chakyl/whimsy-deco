@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " A ",
+    " S ",
+    "   "
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:white_wool"
+    },
+    "S": {
+      "item": "minecraft:stripped_bamboo_block"
+    }
+  },
+  "result": {
+    "item": "whimsy_deco:rattan_stool",
+    "count": 1
+  },
+  "show_notification": true
+}

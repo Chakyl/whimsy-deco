@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " S ",
+    " A ",
+    " D "
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:string"
+    },
+    "S": {
+      "item": "minecraft:honeycomb"
+    },
+    "D": {
+      "item": "minecraft:bamboo"
+    }
+  },
+  "result": {
+    "item": "whimsy_deco:bamboo_candle",
+    "count": 1
+  },
+  "show_notification": true
+}

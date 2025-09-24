@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "SA ",
+    "SS ",
+    "   "
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:quartz_block"
+    },
+    "S": {
+      "item": "minecraft:quartz"
+    }
+  },
+  "result": {
+    "item": "whimsy_deco:light_tile",
+    "count": 1
+  },
+  "show_notification": true
+}

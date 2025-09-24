@@ -1,0 +1,38 @@
+{
+	"format_version": "1.21.6",
+	"credit": "Made with Blockbench",
+	"render_type": "minecraft:cutout",
+	"textures": {
+		"0": "whimsy_deco:block/push_broom",
+		"particle": "whimsy_deco:block/push_broom"
+	},
+	"elements": [
+		{
+			"from": [7, -1, 14],
+			"to": [9, 13.5, 16],
+			"rotation": {"angle": 22.5, "axis": "x", "origin": [8, 13.5, 15]},
+			"faces": {
+				"north": {"uv": [3, 0, 2, 7.25], "texture": "#0"},
+				"east": {"uv": [3, 0, 2, 7.25], "texture": "#0"},
+				"south": {"uv": [3, 0, 2, 7.25], "texture": "#0"},
+				"west": {"uv": [3, 0, 2, 7.25], "texture": "#0"},
+				"up": {"uv": [2, 0, 1, 1], "texture": "#0"},
+				"down": {"uv": [5, 2, 4, 1], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"firstperson_righthand": {
+			"rotation": [71.75, 0, 0],
+			"translation": [11, -6.75, -20]
+		}
+	},
+	"groups": [
+		{
+			"name": "group",
+			"origin": [8, 31, -1],
+			"color": 0,
+			"children": [0]
+		}
+	]
+}

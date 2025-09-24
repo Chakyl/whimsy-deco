@@ -1,0 +1,61 @@
+{
+	"format_version": "1.21.6",
+	"credit": "Made with Blockbench",
+	"render_type": "minecraft:cutout",
+	"textures": {
+		"0": "whimsy_deco:block/push_broom",
+		"particle": "whimsy_deco:block/push_broom"
+	},
+	"elements": [
+		{
+			"from": [7, 0, 7],
+			"to": [9, 15, 9],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 15, 8]},
+			"faces": {
+				"north": {"uv": [3, 0, 2, 7.5], "texture": "#0"},
+				"east": {"uv": [3, 0, 2, 7.5], "texture": "#0"},
+				"south": {"uv": [3, 0, 2, 7.5], "texture": "#0"},
+				"west": {"uv": [3, 0, 2, 7.5], "texture": "#0"},
+				"up": {"uv": [2, 0, 1, 1], "texture": "#0"},
+				"down": {"uv": [5, 2, 4, 1], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [75, 45, 0],
+			"translation": [0.25, -2.5, -6],
+			"scale": [0.7, 0.7, 0.7]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [75, 45, 0],
+			"translation": [0.25, -2.5, -6],
+			"scale": [0.7, 0.7, 0.7]
+		},
+		"firstperson_righthand": {
+			"rotation": [163.5, 0, 0],
+			"translation": [21.5, 8.25, -20]
+		},
+		"firstperson_lefthand": {
+			"rotation": [163.5, 0, 0],
+			"translation": [21.5, 8.25, -20]
+		},
+		"ground": {
+			"translation": [0, 2, 0],
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"gui": {
+			"rotation": [30, -135, 0],
+			"translation": [0, -2, 0],
+			"scale": [0.625, 0.625, 0.625]
+		}
+	},
+	"groups": [
+		{
+			"name": "group",
+			"origin": [8, 31.5, -8],
+			"color": 0,
+			"children": [0]
+		}
+	]
+}

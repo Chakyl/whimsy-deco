@@ -22,7 +22,7 @@ public class ToyPlaneBlock extends RotatingBlock {
     public static final BooleanProperty FLYING = BooleanProperty.create("flying");
 
     public ToyPlaneBlock(Properties props) {
-        super(props, createShapeBuilder(SHAPE));
+        super(props, createShapeBuilder());
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(FLYING, false).setValue(WATERLOGGED, false));
     }
 
@@ -31,7 +31,7 @@ public class ToyPlaneBlock extends RotatingBlock {
         pBuilder.add(FACING, FLYING, WATERLOGGED);
     }
 
-    public static ShapeBuilder createShapeBuilder(final VoxelShape shape) {
+    public static ShapeBuilder createShapeBuilder() {
         return blockState -> {
             final Boolean flying = blockState.getValue(FLYING);
             return flying ? SHAPE_FLYING : SHAPE;

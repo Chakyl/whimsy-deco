@@ -1,0 +1,10 @@
+{
+  "squeak": {
+    "sounds": [ "whimsy_deco:squeak" ],
+    "subtitle": "subtitle.block.whimsy_deco.squeak"
+  },
+  "kaching": {
+    "sounds": [ "whimsy_deco:kaching" ],
+    "subtitle": "subtitle.block.whimsy_deco.kaching"
+  }
+}

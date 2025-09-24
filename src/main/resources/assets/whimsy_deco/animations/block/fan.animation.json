@@ -2,7 +2,6 @@
 	"format_version": "1.8.0",
 	"animations": {
 		"fanloop": {
-			"loop": true,
 			"animation_length": 14,
 			"bones": {
 				"bone2": {

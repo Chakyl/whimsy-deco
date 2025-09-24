@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "AS ",
+    "AD ",
+    "   "
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:iron_ingot"
+    },
+    "S": {
+      "item": "minecraft:glass_pane"
+    },
+    "D": {
+      "item": "minecraft:stone_button"
+    }
+  },
+  "result": {
+    "item": "whimsy_deco:phone",
+    "count": 1
+  },
+  "show_notification": true
+}

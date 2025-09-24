@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ASA",
+    "SDS",
+    "ASA"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:stick"
+    },
+    "S": {
+      "tag": "minecraft:planks"
+    },
+    "D": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "result": {
+    "item": "whimsy_deco:ship_helm",
+    "count": 1
+  },
+  "show_notification": true
+}

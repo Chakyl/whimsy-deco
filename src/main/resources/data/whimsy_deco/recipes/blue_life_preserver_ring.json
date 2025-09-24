@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "SAS",
+    "D D",
+    "SAS"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:blue_wool"
+    },
+    "S": {
+      "item": "minecraft:string"
+    },
+    "D": {
+      "item": "minecraft:white_wool"
+    }
+  },
+  "result": {
+    "item": "whimsy_deco:blue_life_preserver_ring",
+    "count": 1
+  },
+  "show_notification": true
+}

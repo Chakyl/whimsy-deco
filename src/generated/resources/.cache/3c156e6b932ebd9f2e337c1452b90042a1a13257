@@ -1,4 +1,4 @@
-// 1.20.1	2025-09-22T22:42:34.3030024	Item Models: whimsy_deco
+// 1.20.1	2025-09-23T21:31:52.6438756	Item Models: whimsy_deco
 5d8edbb638ffd15d1a89ee557faa4aaa10ced943 assets/whimsy_deco/models/item/antique_vintage_globe.json
 137d860ed44bb7e642eb74e523fc6fb5217172fe assets/whimsy_deco/models/item/bamboo_candle.json
 7fc201acbebc03a33826868cb563b161e4eb7183 assets/whimsy_deco/models/item/bamboo_framed_paper_lantern.json
@@ -18,7 +18,7 @@ cd86e578645c81f2f61d515de8aa978787ca9a8a assets/whimsy_deco/models/item/blue_fro
 cb7969c9cc5f36e2b76e1ad3da012ae6c101fe8b assets/whimsy_deco/models/item/blue_stocking.json
 96fb1f6c2899cded2605f35098a66fc505f49243 assets/whimsy_deco/models/item/blue_toy_plane.json
 df1dd0ca2e046d5f8785b9922317c5e9167fe354 assets/whimsy_deco/models/item/bronze_cowbell.json
-8d8952ffac4eb22ddf0d425edcbe380a4cd415f6 assets/whimsy_deco/models/item/broom.json
+f0ba603602c514dd8aadf7e696d94fbfa3447985 assets/whimsy_deco/models/item/broom.json
 2fff99e310b1e573b0761b7b2ecf0dbad402a170 assets/whimsy_deco/models/item/cash_register.json
 a7b1dfab286f1b4b1ddc97827461c23478dde424 assets/whimsy_deco/models/item/cast_iron_ledge.json
 9a7cc6b5975b4057d606f489d1ef82977c4b24af assets/whimsy_deco/models/item/caution_floor_sign.json
@@ -47,6 +47,7 @@ abb7295e71f03f652942f2cc22d52c13666ba171 assets/whimsy_deco/models/item/horsesho
 9de8bd8860e2421df7870b94152719853e5360e3 assets/whimsy_deco/models/item/light_tile.json
 d108ebbdd73078d255c52ebdffaafb139894cc51 assets/whimsy_deco/models/item/lucky_cat.json
 4a3077aad340ef7bd0987c25456c046b4fadf57c assets/whimsy_deco/models/item/matryoshka_doll.json
+01fbabeebd4c8d4e686bcf4063e0a79928a81a73 assets/whimsy_deco/models/item/moroccan_sofa.json
 eca0584f850955f0b0d6a72d94771d4a7105ccef assets/whimsy_deco/models/item/oak_desk_mirror.json
 7790bc4a441f67f98caafe10ff544881c86570f1 assets/whimsy_deco/models/item/orange_froggy_chair.json
 2532fcebed67cb9118b35feb53d71116de9a9aaf assets/whimsy_deco/models/item/orange_lawn_mower.json
@@ -55,8 +56,7 @@ be25d3e722a538745c9519d209f21a90d1d550bd assets/whimsy_deco/models/item/orange_s
 c562330d16c43047d3fa8d8daa12311bffbba406 assets/whimsy_deco/models/item/paper_lantern.json
 4eec03d170f92efac0f9c748817ba118d320cece assets/whimsy_deco/models/item/phone.json
 5b8aabbdeb51d2fd6c490df32d047656e3d77b0e assets/whimsy_deco/models/item/pink_froggy_chair.json
-4f51770ea8d54abcef2ce368f36ec03ca9e85006 assets/whimsy_deco/models/item/push_broom.json
-d8f4a87e4ff5b816b3d4a2b4b8e6f8022a90ff8a assets/whimsy_deco/models/item/rattan_sofa.json
+04a1387a0330d90facef13cadf224ec2fe79054b assets/whimsy_deco/models/item/push_broom.json
 5a735e0405944a09c1c274ff425d7b46920cb556 assets/whimsy_deco/models/item/rattan_stool.json
 ea7552af5631dd16adc987c50eea8aa1cb96d093 assets/whimsy_deco/models/item/recorder.json
 12a9dc739b034a502c6900e55f2951b95cb8f814 assets/whimsy_deco/models/item/red_atm.json

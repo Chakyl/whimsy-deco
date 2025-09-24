@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " A ",
+    " S ",
+    " D "
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:orange_concrete"
+    },
+    "S": {
+      "item": "minecraft:white_concrete"
+    },
+    "D": {
+      "item": "minecraft:black_concrete"
+    }
+  },
+  "result": {
+    "item": "whimsy_deco:traffic_cone",
+    "count": 1
+  },
+  "show_notification": true
+}

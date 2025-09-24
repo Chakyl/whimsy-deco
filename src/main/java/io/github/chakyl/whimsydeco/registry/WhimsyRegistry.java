@@ -4,15 +4,16 @@ import com.google.common.base.Suppliers;
 import io.github.chakyl.whimsydeco.WhimsyDeco;
 import io.github.chakyl.whimsydeco.blockentities.*;
 import io.github.chakyl.whimsydeco.blocks.*;
+import io.github.chakyl.whimsydeco.items.GatchaCapsuleItem;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.world.item.*;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.CandleBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.TrapDoorBlock;
 import net.minecraft.world.level.block.entity.BlockEntityType;
@@ -39,12 +40,14 @@ public final class WhimsyRegistry {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, MODID);
     private static final DeferredRegister<BlockEntityType<?>> BLOCK_ENTITY_TYPES = DeferredRegister.create(ForgeRegistries.BLOCK_ENTITY_TYPES, MODID);
     private static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MODID);
+    private static final DeferredRegister<SoundEvent> SOUND_EVENTS = DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, MODID);
 
     public static void register() {
         BlockRegistry.register();
         BlockEntityRegistry.register();
         ItemRegistry.register();
         CreativeTabReg.register();
+        SoundRegistry.register();
     }
 
     public static final class BlockRegistry {
@@ -67,7 +70,7 @@ public final class WhimsyRegistry {
 
         // Bamboo Candle
         public static final RegistryObject<Block> BAMBOO_CANDLE = registerWithItem("bamboo_candle", () ->
-                new BambooCandleBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).sound(SoundType.BAMBOO).noOcclusion().strength(1.5F, 6.0F)));
+                new BambooCandleBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).sound(SoundType.BAMBOO).noOcclusion().lightLevel(BambooCandleBlock.LIGHT_EMISSION).strength(1.5F, 6.0F)));
 
         // Bathroom Rack
         public static final RegistryObject<Block> BATHROOM_RACK = registerWithItem("bathroom_rack", () ->
@@ -103,7 +106,7 @@ public final class WhimsyRegistry {
 
         // Cast Iron Trap Door
         public static final RegistryObject<Block> CAST_IRON_TRAPDOOR = registerWithItem("cast_iron_trapdoor", () ->
-                new ThinTrapDoorBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.METAL).noOcclusion().strength(1.5F, 6.0F), BlockSetType.IRON));
+                new ThinTrapDoorBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.METAL).noOcclusion().strength(1.5F, 6.0F), BlockSetType.OAK));
 
         // Caution Floor Sign
         public static final RegistryObject<Block> CAUTION_FLOOR_SIGN = registerWithItem("caution_floor_sign", () ->
@@ -189,6 +192,10 @@ public final class WhimsyRegistry {
         public static final RegistryObject<Block> GOLD_LUCKY_CAT = registerWithItem("gold_lucky_cat", () ->
                 new GoldLuckyCatBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.COPPER).noOcclusion().strength(1.5F, 6.0F)));
 
+        // Moroccan Sofa
+        public static final RegistryObject<Block> MOROCCAN_SOFA = registerWithItem("moroccan_sofa", () ->
+                new SofaBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).sound(SoundType.BAMBOO_WOOD).noOcclusion().strength(1.5F, 6.0F)));
+
         // Paper Lantern
         public static final RegistryObject<Block> PAPER_LANTERN = registerWithItem("paper_lantern", () ->
                 new PaperLanternBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).sound(SoundType.WOOL).lightLevel(blockState -> 15).noOcclusion().strength(1.5F, 6.0F)));
@@ -218,10 +225,6 @@ public final class WhimsyRegistry {
                 new RattanChairBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).sound(SoundType.BAMBOO_WOOD).noOcclusion().strength(1.5F, 6.0F)));
         public static final RegistryObject<Block> WARPED_RATTAN_CHAIR = registerWithItem("warped_rattan_chair", () ->
                 new RattanChairBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).sound(SoundType.NETHER_WOOD).noOcclusion().strength(1.5F, 6.0F)));
-
-        // Rattan Sofa
-        public static final RegistryObject<Block> RATTAN_SOFA = registerWithItem("rattan_sofa", () ->
-                new SofaBlock(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).sound(SoundType.BAMBOO_WOOD).noOcclusion().strength(1.5F, 6.0F)));
 
         // Rattan Stool
         public static final RegistryObject<Block> RATTAN_STOOL = registerWithItem("rattan_stool", () ->
@@ -358,6 +361,9 @@ public final class WhimsyRegistry {
             ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
         }
 
+        public static final RegistryObject<Item> GATCHA_CAPSULE = register("gatcha_capsule", () -> new GatchaCapsuleItem(new Item.Properties().rarity(Rarity.RARE).stacksTo(64)));
+
+
         /**
          * Creates a registry object for a block item and adds it to the mod creative tab
          *
@@ -381,7 +387,19 @@ public final class WhimsyRegistry {
             return item;
         }
     }
+    public static final class SoundRegistry {
 
+        private static void register() {
+            SOUND_EVENTS.register(FMLJavaModLoadingContext.get().getModEventBus());
+        }
+
+        public static final RegistryObject<SoundEvent> SQUEAK = register("squeak");
+        public static final RegistryObject<SoundEvent> KACHING = register("kaching");
+
+        private static RegistryObject<SoundEvent> register(final String name) {
+            return SOUND_EVENTS.register(name, () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath(WhimsyDeco.MODID, name)));
+        }
+    }
     public static final class CreativeTabReg {
 
         private static void register() {
@@ -390,7 +408,7 @@ public final class WhimsyRegistry {
 
         public static final RegistryObject<CreativeModeTab> TAB = CREATIVE_MODE_TABS.register("tab", () ->
                 CreativeModeTab.builder()
-                        .icon(Suppliers.memoize(() -> new ItemStack(BlockRegistry.BLUE_TOY_PLANE.get())))
+                        .icon(Suppliers.memoize(() -> new ItemStack(BlockRegistry.GNOME.get())))
                         .title(Component.translatable("itemGroup." + WhimsyDeco.MODID))
                         .withSearchBar()
                         .displayItems((parameters, output) ->
