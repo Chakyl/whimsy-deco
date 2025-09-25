@@ -23,8 +23,7 @@ public class GatchaCapsuleItem extends Item {
 
         pLevel.playSound((Player) null, pPlayer.getOnPos(), SoundEvents.UI_STONECUTTER_TAKE_RESULT, SoundSource.BLOCKS, 0.5F, 1.0F);
         pLevel.playSound((Player) null, pPlayer.getOnPos(), SoundEvents.EXPERIENCE_ORB_PICKUP, SoundSource.BLOCKS, 0.5F, 1.0F);
-        if (pLevel.isClientSide()) {
-
+        if (!pLevel.isClientSide()) {
             ItemStack[] gatchaDrops = Ingredient.of(WhimsyItemTags.GATCHA_DROPS).getItems();
             if (!pPlayer.isCreative()) pPlayer.getItemInHand(pHand).shrink(1);
             pPlayer.getInventory().add(gatchaDrops[Mth.floor(Mth.randomBetween(pLevel.getRandom(), 0f, gatchaDrops.length))].copy());

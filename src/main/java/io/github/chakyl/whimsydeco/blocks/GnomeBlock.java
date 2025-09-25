@@ -17,7 +17,7 @@ import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
 public class GnomeBlock extends RotatingBlock {
-    public static final VoxelShape SHAPE = box(0, 0, 0, 16, 16, 16);
+    public static final VoxelShape SHAPE = box(1, 0, 1, 15, 15, 15);
 
     public static final IntegerProperty TYPE = IntegerProperty.create("type", 0, 3);
 
@@ -34,11 +34,10 @@ public class GnomeBlock extends RotatingBlock {
     @Override
     public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
         if (pHand == InteractionHand.MAIN_HAND) {
-            if (pPlayer.getItemInHand(pHand) == Items.LANTERN.getDefaultInstance()) {
-                pLevel.setBlockAndUpdate(pPos, WhimsyRegistry.BlockRegistry.LANTERN_GNOME.get().defaultBlockState());
+            if (pPlayer.getItemInHand(pHand).getItem() == Items.LANTERN) {
+                pLevel.setBlockAndUpdate(pPos, WhimsyRegistry.BlockRegistry.LANTERN_GNOME.get().defaultBlockState().setValue(FACING, pState.getValue(FACING)));
                 pPlayer.getItemInHand(pHand).shrink(1);
             } else {
-
                 int type = pState.getValue(TYPE);
                 pLevel.setBlockAndUpdate(pPos, pState.setValue(TYPE, type == 3 ? 0 : type + 1));
             }

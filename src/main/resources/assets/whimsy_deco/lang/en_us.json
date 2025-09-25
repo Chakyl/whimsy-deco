@@ -37,7 +37,7 @@
   "block.whimsy_deco.caution_floor_sign": "Caution Floor Sign",
   "block.whimsy_deco.washing_machine": "Washing Machine",
 
-  "block.whimsy_deco.gatcha_machine": "Gatcha Machine",
+  "block.whimsy_deco.gatcha_machine": "Gacha Machine",
 
   "block.whimsy_deco.gnome": "Gnome",
   "block.whimsy_deco.lantern_gnome": "Lantern Gnome",
@@ -106,6 +106,7 @@
   "block.whimsy_deco.light_tile": "Monochrome Bricks",
 
   "block.whimsy_deco.cast_iron_ledge": "Cast Iron Ledge",
+  "block.whimsy_deco.cast_iron_trapdoor": "Cast Iron Trapdoor",
   "block.whimsy_deco.broom": "Broom",
   "block.whimsy_deco.push_broom": "Push Broom",
   "block.whimsy_deco.recorder": "Recorder",
@@ -115,9 +116,9 @@
   "block.whimsy_deco.orange_life_preserver_ring": "Orange Life Preserver Ring", 
   "block.whimsy_deco.blue_life_preserver_ring": "Blue Life Preserver Ring",
 
-  "item.whimsy_deco.gatcha_capsule": "Gatcha Capsule",
+  "item.whimsy_deco.gatcha_capsule": "Gacha Capsule",
 
-  "jei.whimsy_deco.category.gatcha_opening": "Gatcha Opening",
+  "jei.whimsy_deco.category.gatcha_opening": "Gacha Opening",
   "jei.whimsy_deco.category.purchasing": "Purchasing",
 
   "subtitle.block.whimsy_deco.squeak": "Squeak!",

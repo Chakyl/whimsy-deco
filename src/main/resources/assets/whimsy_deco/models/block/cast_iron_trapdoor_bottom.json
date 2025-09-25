@@ -1,6 +1,5 @@
 {
-  "format_version": "1.9.0",
-  "credit": "Made with Blockbench",
+  "render_type": "minecraft:cutout",
   "texture_size": [32, 32],
   "textures": {
     "0": "whimsy_deco:block/cast_iron",

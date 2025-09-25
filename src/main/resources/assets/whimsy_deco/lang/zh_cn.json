@@ -1,0 +1,125 @@
+{
+  "itemGroup.whimsy_deco": "奇趣装饰",
+  "itemGroup.whimsy_deco.creative_tab": "奇趣装饰",
+
+  "block.whimsy_deco.green_atm": "绿色取款机",
+  "block.whimsy_deco.yellow_atm": "黄色取款机",
+  "block.whimsy_deco.red_atm": "红色取款机",
+  "block.whimsy_deco.blue_atm": "蓝色取款机",
+  "block.whimsy_deco.black_atm": "黑色取款机",
+
+  "block.whimsy_deco.fufu_plushie": "fufu玩偶",
+  "block.whimsy_deco.flower_pig_plushie": "花猪玩偶",
+  "block.whimsy_deco.golden_pig_plushie": "金猪玩偶",
+  "block.whimsy_deco.big_panda_plushie": "大熊猫玩偶",
+  "block.whimsy_deco.vocal_doll": "蓝发歌姬",
+  "block.whimsy_deco.red_vocal_doll": "红发歌姬",
+  
+  "block.whimsy_deco.bamboo_candle": "竹蜡烛",
+
+  "block.whimsy_deco.bathroom_rack": "浴室置物架",
+  "block.whimsy_deco.oak_desk_mirror": "橡木桌镜",
+  "block.whimsy_deco.spruce_desk_mirror": "云杉木桌镜",
+  "block.whimsy_deco.dark_oak_desk_mirror": "深色橡木桌镜",
+
+  "block.whimsy_deco.cash_register": "收银机",
+  "block.whimsy_deco.black_cash_register": "黑色收银机",
+  "block.whimsy_deco.gray_cash_register": "灰色收银机",
+
+  "block.whimsy_deco.black_curio_cash_register": "黑色古董收银机",
+  "block.whimsy_deco.gold_curio_cash_register": "金色古董收银机",
+  "block.whimsy_deco.copper_curio_cash_register": "铜质古董收银机",
+  "block.whimsy_deco.iron_curio_cash_register": "铁质古董收银机",
+
+  "block.whimsy_deco.horseshoe": "马蹄铁",
+  "block.whimsy_deco.golden_horseshoe": "金马蹄铁",
+  "block.whimsy_deco.dartboard": "飞镖靶",
+  "block.whimsy_deco.caution_floor_sign": "警示牌",
+  "block.whimsy_deco.washing_machine": "洗衣机",
+
+  "block.whimsy_deco.gatcha_machine": "扭蛋机",
+
+  "block.whimsy_deco.gnome": "地精",
+  "block.whimsy_deco.lantern_gnome": "提灯地精",
+
+  "block.whimsy_deco.froggy_chair": "青蛙椅",
+  "block.whimsy_deco.yellow_froggy_chair": "黄色青蛙椅",
+  "block.whimsy_deco.pink_froggy_chair": "粉色青蛙椅",
+  "block.whimsy_deco.orange_froggy_chair": "橙色青蛙椅",
+  "block.whimsy_deco.blue_froggy_chair": "蓝色青蛙椅",
+
+  "block.whimsy_deco.red_lawn_mower": "红色割草机",
+  "block.whimsy_deco.orange_lawn_mower": "橙色割草机",
+  "block.whimsy_deco.blue_lawn_mower": "蓝色割草机",
+  "block.whimsy_deco.yellow_lawn_mower": "黄色割草机",
+
+  "block.whimsy_deco.matryoshka_doll": "俄罗斯套娃",
+
+  "block.whimsy_deco.paper_lantern": "纸灯笼",
+  "block.whimsy_deco.red_paper_lantern": "中式纸灯笼",
+  "block.whimsy_deco.blue_paper_lantern": "蓝色纸灯笼",
+  "block.whimsy_deco.wood_framed_paper_lantern": "木框纸灯笼",
+  "block.whimsy_deco.bamboo_framed_paper_lantern": "竹框纸灯笼",
+  "block.whimsy_deco.tree_paper_lantern": "树纹纸灯笼",
+
+  "block.whimsy_deco.phone": "电话",
+  "block.whimsy_deco.black_phone": "黑色电话",
+  "block.whimsy_deco.red_phone": "红色电话",
+  "block.whimsy_deco.blue_phone": "蓝色电话",
+
+  "block.whimsy_deco.vine_rattan_chair": "藤编椅",
+  "block.whimsy_deco.warped_rattan_chair": "缠怨藤编椅",
+
+  "block.whimsy_deco.rattan_stool": "藤编凳子",
+  
+  "block.whimsy_deco.rubber_duck": "橡皮鸭",
+  
+  "block.whimsy_deco.ship_helm": "船舵",
+
+  "block.whimsy_deco.shower": "花洒",
+
+  "block.whimsy_deco.red_stocking": "红色圣诞袜",
+  "block.whimsy_deco.green_stocking": "绿色圣诞袜",
+  "block.whimsy_deco.orange_stocking": "橙色圣诞袜",
+  "block.whimsy_deco.blue_stocking": "蓝色圣诞袜",
+
+  "block.whimsy_deco.flamingo_swimming_ring": "火烈鸟泳圈",
+  "block.whimsy_deco.swan_swimming_ring": "天鹅泳圈",
+  "block.whimsy_deco.black_swan_swimming_ring": "黑天鹅泳圈",
+
+  "block.whimsy_deco.traffic_cone": "交通锥",
+
+  "block.whimsy_deco.yellow_toy_plane": "黄色玩具飞机",
+  "block.whimsy_deco.red_toy_plane": "红色玩具飞机",
+  "block.whimsy_deco.blue_toy_plane": "蓝色玩具飞机",
+
+  "block.whimsy_deco.cowbell": "牛铃",
+  "block.whimsy_deco.bronze_cowbell": "青铜牛铃",
+  "block.whimsy_deco.lucky_cat": "招财猫",
+  "block.whimsy_deco.gold_lucky_cat": "金色招财猫",
+  "block.whimsy_deco.singing_frog": "歌王蛙",
+  "block.whimsy_deco.fan": "风扇",
+  "block.whimsy_deco.vintage_globe": "复古地球仪",
+  "block.whimsy_deco.antique_vintage_globe": "古董复古地球仪",
+
+  "block.whimsy_deco.classic_tile": "黑色单色砖",
+  "block.whimsy_deco.light_tile": "单色砖",
+
+  "block.whimsy_deco.cast_iron_ledge": "铸铁壁架",
+  "block.whimsy_deco.broom": "扫帚",
+  "block.whimsy_deco.push_broom": "推式扫帚",
+  "block.whimsy_deco.recorder": "录音机",
+  "block.whimsy_deco.moroccan_sofa": "摩洛哥沙发",
+  "block.whimsy_deco.yellow_life_preserver_ring": "黄色救生圈", 
+  "block.whimsy_deco.red_life_preserver_ring": "红色救生圈", 
+  "block.whimsy_deco.orange_life_preserver_ring": "橙色救生圈", 
+  "block.whimsy_deco.blue_life_preserver_ring": "蓝色救生圈",
+
+  "item.whimsy_deco.gatcha_capsule": "扭蛋胶囊",
+
+  "jei.whimsy_deco.category.gatcha_opening": "扭蛋开启中",
+  "jei.whimsy_deco.category.purchasing": "购买",
+
+  "subtitle.block.whimsy_deco.squeak": "吱！",
+  "subtitle.block.whimsy_deco.kaching": "叮当！"
+}

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "SAS",
+    "SDS",
+    "   "
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:red_wool"
+    },
+    "S": {
+      "item": "minecraft:dark_oak_log"
+    },
+    "D": {
+      "item": "minecraft:green_wool"
+    }
+  },
+  "result": {
+    "item": "whimsy_deco:moroccan_sofa",
+    "count": 1
+  },
+  "show_notification": true
+}

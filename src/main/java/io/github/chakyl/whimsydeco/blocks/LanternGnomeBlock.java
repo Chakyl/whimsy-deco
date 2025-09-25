@@ -15,7 +15,7 @@ import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
 public class LanternGnomeBlock extends RotatingBlock {
-    public static final VoxelShape SHAPE = box(0, 0, 0, 16, 11, 16);
+    public static final VoxelShape SHAPE = box(1, 0, 1, 15, 15, 15);
 
     public LanternGnomeBlock(Properties props) {
         super(props, createShapeBuilder(SHAPE));
