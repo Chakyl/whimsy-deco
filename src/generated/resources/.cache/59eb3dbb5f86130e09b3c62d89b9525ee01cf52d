@@ -1,4 +1,4 @@
-// 1.20.1	2025-09-23T21:46:16.7363752	Loot Tables
+// 1.20.1	2025-10-02T13:14:29.420477	Loot Tables
 8634febb2f7fa3579c97c57faee66f70e6b36b9b data/whimsy_deco/loot_tables/blocks/antique_vintage_globe.json
 51f50a5df67bff96d66fdfdea7c69791533a2a47 data/whimsy_deco/loot_tables/blocks/bamboo_candle.json
 5a981fc663027a7ecae456ec1de616caeb781f90 data/whimsy_deco/loot_tables/blocks/bamboo_framed_paper_lantern.json
@@ -76,10 +76,10 @@ ce4dc48cbd878a103bc123d31b758fa8b97f6972 data/whimsy_deco/loot_tables/blocks/sin
 9959851a9de2109ceed6cc26716c7be00d5b1ac5 data/whimsy_deco/loot_tables/blocks/swan_swimming_ring.json
 9ba61f3287bf35ce883c24afeb5ede3981fb05b7 data/whimsy_deco/loot_tables/blocks/traffic_cone.json
 a230e00289e601aa92d970bd8bf51bd9d856d665 data/whimsy_deco/loot_tables/blocks/tree_paper_lantern.json
-a2ad62ad6ee25d6a0495102a1f848a447af4a352 data/whimsy_deco/loot_tables/blocks/vine_rattan_chair.json
+decdb2c810da68e97c20b2bf92f7f8045395a761 data/whimsy_deco/loot_tables/blocks/vine_rattan_chair.json
 5c3b99ec1ec499eaef50e966710a7376d0232a01 data/whimsy_deco/loot_tables/blocks/vintage_globe.json
 5823f2b2c9f3f1c39db5f6c0412a5a2cf593ebdf data/whimsy_deco/loot_tables/blocks/vocal_doll.json
-21cb84ae180f044a3e71d5ae852aa4c454fb5d94 data/whimsy_deco/loot_tables/blocks/warped_rattan_chair.json
+0d6df4d8bb025d86af307308f56004265ba00528 data/whimsy_deco/loot_tables/blocks/warped_rattan_chair.json
 a11ab92116228ed00d467f4575d244766019a20b data/whimsy_deco/loot_tables/blocks/washing_machine.json
 32e31272fc82a28b3f21b64c53441a5786b55ff3 data/whimsy_deco/loot_tables/blocks/wood_framed_paper_lantern.json
 232b069e5064bbfdc7c5d3358d1ac2fd721eeafe data/whimsy_deco/loot_tables/blocks/yellow_atm.json
