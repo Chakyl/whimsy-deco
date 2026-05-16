@@ -34,8 +34,8 @@ public class MatryoshkaBlock extends RotatingBlock {
     }
 
     @Override
-    public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
-        if (pHand == InteractionHand.MAIN_HAND) {
+    public InteractionResult useWithoutItem(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, BlockHitResult pHit) {
+        if (pPlayer.getItemInHand(InteractionHand.MAIN_HAND).isEmpty()) {
             int type = pState.getValue(TYPE);
             if (pPlayer.isCrouching() && type > 0) {
                 pLevel.setBlockAndUpdate(pPos, pState.setValue(TYPE, type - 1));

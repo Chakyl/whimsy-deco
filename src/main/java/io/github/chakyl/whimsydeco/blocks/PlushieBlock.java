@@ -21,7 +21,7 @@ public class PlushieBlock extends RotatingBlock {
     }
 
     @Override
-    public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
+    public InteractionResult useWithoutItem(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, BlockHitResult pHit) {
         pLevel.playSound((Player) null, pPlayer.getOnPos(), WhimsyRegistry.SoundRegistry.SQUEAK.get(), SoundSource.BLOCKS, 1F, 1.0F);
         return InteractionResult.SUCCESS;
     }

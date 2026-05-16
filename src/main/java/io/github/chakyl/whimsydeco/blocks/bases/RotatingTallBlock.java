@@ -1,5 +1,6 @@
 package io.github.chakyl.whimsydeco.blocks.bases;
 
+import com.mojang.serialization.MapCodec;
 import io.github.chakyl.whimsydeco.blocks.providers.IDelegateProvider;
 import io.github.chakyl.whimsydeco.util.MultiblockHandler;
 import io.github.chakyl.whimsydeco.util.ShapeBuilder;
@@ -15,6 +16,8 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.DoublePlantBlock;
 import net.minecraft.world.level.block.HorizontalDirectionalBlock;
 import net.minecraft.world.level.block.SimpleWaterloggedBlock;
 import net.minecraft.world.level.block.state.BlockState;
@@ -33,12 +36,17 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import java.util.EnumMap;
 import java.util.HashMap;
 import java.util.Map;
+
+
 /**
  * @author skyjay1
  * [https://github.com/skyjay1/Tanuki-Decor/blob/main-1.20.1/src/main/java/tanukidecor/block/RotatingTallBlock.java]
  * Used with permission under the GNU LGPLv3 license
  */
+
 public class RotatingTallBlock extends HorizontalDirectionalBlock implements SimpleWaterloggedBlock, IDelegateProvider {
+
+    public static final MapCodec<RotatingTallBlock> CODEC = simpleCodec(RotatingTallBlock::new);
 
     public static final EnumProperty<DoubleBlockHalf> HALF = BlockStateProperties.DOUBLE_BLOCK_HALF;
     public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
@@ -57,7 +65,16 @@ public class RotatingTallBlock extends HorizontalDirectionalBlock implements Sim
         precalculateShapes();
     }
 
-    //// SHAPE ////
+    protected RotatingTallBlock(Properties pProperties) {
+        this(pProperties, createShapeBuilder(Shapes.block(), Shapes.block()));
+    }
+
+    @Override
+    protected MapCodec<? extends RotatingTallBlock> codec() {
+        return CODEC;
+    }
+
+    /// / SHAPE ////
 
     protected void precalculateShapes() {
         blockShapes.clear();
@@ -66,7 +83,7 @@ public class RotatingTallBlock extends HorizontalDirectionalBlock implements Sim
         final Map<Direction, VoxelShape> doubleBlockShapes = new EnumMap<>(Direction.class);
         doubleBlockShapes.putAll(ShapeUtils.rotateShapes(MultiblockHandler.ORIGIN_DIRECTION, createDoubleBlockShape()));
         // create shapes for all possible block states
-        for(BlockState blockState : this.stateDefinition.getPossibleStates()) {
+        for (BlockState blockState : this.stateDefinition.getPossibleStates()) {
             // calculate block shape
             blockShapes.put(blockState, this.shapeBuilder.apply(blockState));
             // calculate multiblock shape
@@ -114,14 +131,14 @@ public class RotatingTallBlock extends HorizontalDirectionalBlock implements Sim
         return getMultiblockShape(pState);
     }
 
-    //// DELEGATE PROVIDER ////
+    /// / DELEGATE PROVIDER ////
 
     @Override
     public BlockPos getDelegatePos(BlockState blockState, BlockPos blockPos) {
         return blockState.getValue(HALF) == DoubleBlockHalf.UPPER ? blockPos : blockPos.above();
     }
 
-    //// METHODS ////
+    /// / METHODS ////
 
     @Override
     public BlockState getStateForPlacement(BlockPlaceContext pContext) {
@@ -170,11 +187,11 @@ public class RotatingTallBlock extends HorizontalDirectionalBlock implements Sim
     }
 
     @Override
-    public void playerWillDestroy(Level pLevel, BlockPos pPos, BlockState pState, Player pPlayer) {
+    public BlockState playerWillDestroy(Level pLevel, BlockPos pPos, BlockState pState, Player pPlayer) {
         if (!pLevel.isClientSide && pPlayer.isCreative()) {
-//            DoublePlantBlock.preventCreativeDropFromBottomPart(pLevel, pPos, pState, pPlayer);
+            DoublePlantBlock.preventDropFromBottomPart(pLevel, pPos, pState, pPlayer);
         }
-        super.playerWillDestroy(pLevel, pPos, pState, pPlayer);
+        return super.playerWillDestroy(pLevel, pPos, pState, pPlayer);
     }
 
     @Override
@@ -189,7 +206,7 @@ public class RotatingTallBlock extends HorizontalDirectionalBlock implements Sim
 
     public static ShapeBuilder createShapeBuilder(final VoxelShape upperShape, final VoxelShape lowerShape) {
         return blockState -> {
-            final Direction facing =  blockState.getValue(FACING);
+            final Direction facing = blockState.getValue(FACING);
             final DoubleBlockHalf half = blockState.getValue(HALF);
             final VoxelShape shape = half == DoubleBlockHalf.UPPER ? upperShape : lowerShape;
             return ShapeUtils.rotateShape(MultiblockHandler.ORIGIN_DIRECTION, facing, shape);

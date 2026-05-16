@@ -36,10 +36,10 @@ public class CowbellBlock extends RotatingBlock implements EntityBlock {
     }
 
     @Override
-    public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
+    public InteractionResult useWithoutItem(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, BlockHitResult pHit) {
         BlockEntity entity = pLevel.getBlockEntity(pPos);
         if (entity instanceof CowbellBlockEntity) {
-            ((CowbellBlockEntity) entity).stopTriggeredAnimation("controller", "bell");
+//            ((CowbellBlockEntity) entity).stopTriggeredAnimation("controller", "bell");
             ((CowbellBlockEntity) entity).triggerAnim("controller", "bell");
             pLevel.playSound((Player)null, pPos, SoundEvents.BELL_BLOCK, SoundSource.BLOCKS, 2.0F, 1.0F);
         }

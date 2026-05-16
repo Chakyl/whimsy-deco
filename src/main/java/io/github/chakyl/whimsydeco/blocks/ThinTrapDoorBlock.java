@@ -5,6 +5,7 @@ import net.minecraft.core.Direction;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.TrapDoorBlock;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.Half;
@@ -19,10 +20,9 @@ public class ThinTrapDoorBlock extends TrapDoorBlock {
     protected static final VoxelShape BOTTOM_AABB = Block.box(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D);
     protected static final VoxelShape TOP_AABB = Block.box(0.0D, 14.0D, 0.0D, 16.0D, 16.0D, 16.0D);
 
-    public ThinTrapDoorBlock(Properties pProperties, BlockSetType pBlockSetType) {
-        super(pProperties, pBlockSetType);
+    public ThinTrapDoorBlock(BlockBehaviour.Properties pProperties, BlockSetType pBlockSetType) {
+        super(pBlockSetType, pProperties);
     }
-
     @Override
     public VoxelShape getShape(BlockState pBlockState, BlockGetter pBlockGetter, BlockPos pBlockPos, CollisionContext pCollisionContext) {
         if (!pBlockState.getValue(OPEN)) {

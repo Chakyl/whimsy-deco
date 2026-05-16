@@ -35,10 +35,10 @@ public class AntiqueVintageGlobeBlock extends RotatingBlock implements EntityBlo
     }
 
     @Override
-    public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
+    public InteractionResult useWithoutItem(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, BlockHitResult pHit) {
         BlockEntity entity = pLevel.getBlockEntity(pPos);
         if (entity instanceof AntiqueVintageGlobeBlockEntity) {
-            ((AntiqueVintageGlobeBlockEntity) entity).stopTriggeredAnimation("controller", "spin");
+//            ((AntiqueVintageGlobeBlockEntity) entity).stopTriggeredAnimation("controller", "spin");
             ((AntiqueVintageGlobeBlockEntity) entity).triggerAnim("controller", "spin");
             pLevel.playSound((Player) null, pPos, SoundEvents.STONE_HIT, SoundSource.BLOCKS, 0.2F, 1.0F);
         }

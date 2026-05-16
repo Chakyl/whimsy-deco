@@ -18,7 +18,6 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.VoxelShape;
-import software.bernie.geckolib.core.animation.AnimationController;
 
 public class FanBlock extends RotatingBlock implements EntityBlock {
     public static final BooleanProperty ON = BooleanProperty.create("on");
@@ -45,7 +44,7 @@ public class FanBlock extends RotatingBlock implements EntityBlock {
     }
 
     @Override
-    public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
+    public InteractionResult useWithoutItem(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, BlockHitResult pHit) {
         pLevel.setBlockAndUpdate(pPos, pState.setValue(ON, !pState.getValue(ON)));
         return InteractionResult.SUCCESS;
     }

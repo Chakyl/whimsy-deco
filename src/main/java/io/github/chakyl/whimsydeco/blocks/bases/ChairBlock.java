@@ -26,14 +26,14 @@ public class ChairBlock extends RotatingBlock implements ISeatProvider {
             box(0, 0, 3, 4, 5, 13),
             box(12, 0, 3, 16, 5, 13),
             box(0, 5, 3, 16, 10, 13));
-    private double seatYOffset;
+    private final double seatYOffset;
 
     public ChairBlock(final VoxelShape shape, final double seatYOffset, Properties pProperties) {
         super(pProperties, RotatingBlock.createShapeBuilder(shape));
         this.seatYOffset = seatYOffset;
     }
 
-    //// SEAT PROVIDER ////
+    /// / SEAT PROVIDER ////
 
     @Override
     public double getSeatYOffset(BlockState blockState, Level level, BlockPos blockPos) {
@@ -45,7 +45,7 @@ public class ChairBlock extends RotatingBlock implements ISeatProvider {
         return blockState.getValue(FACING);
     }
 
-    //// METHODS ////
+    /// / METHODS ////
 
     @Override
     public void tick(BlockState pState, ServerLevel pLevel, BlockPos pPos, RandomSource pRandom) {
@@ -53,14 +53,14 @@ public class ChairBlock extends RotatingBlock implements ISeatProvider {
     }
 
     @Override
-    public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
-        if(pLevel.isClientSide()) {
+    protected InteractionResult useWithoutItem(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, BlockHitResult pHitResult) {
+        if (pLevel.isClientSide()) {
             return InteractionResult.SUCCESS;
         }
-        if(!pPlayer.isShiftKeyDown() && startSitting(pLevel.getBlockState(pPos), pLevel, pPos, pPlayer)) {
+        if (!pPlayer.isShiftKeyDown() && startSitting(pLevel.getBlockState(pPos), pLevel, pPos, pPlayer)) {
             return InteractionResult.SUCCESS;
         }
-        return super.use(pState, pLevel, pPos, pPlayer, pHand, pHit);
+        return super.useWithoutItem(pState, pLevel, pPos, pPlayer, pHitResult);
     }
 
     @Override

@@ -1,6 +1,5 @@
 package io.github.chakyl.whimsydeco.blocks;
 
-import io.github.chakyl.whimsydeco.blockentities.CowbellBlockEntity;
 import io.github.chakyl.whimsydeco.blockentities.VintageGlobeBlockEntity;
 import io.github.chakyl.whimsydeco.blocks.bases.RotatingBlock;
 import net.minecraft.core.BlockPos;
@@ -36,10 +35,10 @@ public class VintageGlobeBlock extends RotatingBlock implements EntityBlock {
     }
 
     @Override
-    public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
+    public InteractionResult useWithoutItem(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, BlockHitResult pHit) {
         BlockEntity entity = pLevel.getBlockEntity(pPos);
         if (entity instanceof VintageGlobeBlockEntity) {
-            ((VintageGlobeBlockEntity) entity).stopTriggeredAnimation("controller", "spin");
+            ((VintageGlobeBlockEntity) entity).stopTriggeredAnim("controller", "spin");
             ((VintageGlobeBlockEntity) entity).triggerAnim("controller", "spin");
             pLevel.playSound((Player)null, pPos, SoundEvents.STONE_HIT, SoundSource.BLOCKS, 0.2F, 1.0F);
         }

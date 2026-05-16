@@ -3,14 +3,14 @@ package io.github.chakyl.whimsydeco.event;
 import io.github.chakyl.whimsydeco.WhimsyDeco;
 import io.github.chakyl.whimsydeco.client.rederer.*;
 import io.github.chakyl.whimsydeco.registry.WhimsyRegistry.BlockEntityRegistry;
-import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.client.event.EntityRenderersEvent;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.common.Mod;
+import net.neoforged.api.distmarker.Dist;
+import net.neoforged.api.distmarker.OnlyIn;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 
 @OnlyIn(Dist.CLIENT)
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT, modid = WhimsyDeco.MODID)
+@EventBusSubscriber(value = Dist.CLIENT, modid = WhimsyDeco.MODID)
 public class ClientModEvents {
     @SubscribeEvent
     public static void registerRenderers(final EntityRenderersEvent.RegisterRenderers event) {

@@ -6,7 +6,9 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.world.ItemInteractionResult;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
@@ -32,7 +34,7 @@ public class GnomeBlock extends RotatingBlock {
     }
 
     @Override
-    public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
+    protected ItemInteractionResult useItemOn(ItemStack pStack, BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
         if (pHand == InteractionHand.MAIN_HAND) {
             if (pPlayer.getItemInHand(pHand).getItem() == Items.LANTERN) {
                 pLevel.setBlockAndUpdate(pPos, WhimsyRegistry.BlockRegistry.LANTERN_GNOME.get().defaultBlockState().setValue(FACING, pState.getValue(FACING)));
@@ -42,7 +44,7 @@ public class GnomeBlock extends RotatingBlock {
                 pLevel.setBlockAndUpdate(pPos, pState.setValue(TYPE, type == 3 ? 0 : type + 1));
             }
         }
-        return InteractionResult.SUCCESS;
+        return ItemInteractionResult.SUCCESS;
     }
 
 }

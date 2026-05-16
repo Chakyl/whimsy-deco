@@ -52,7 +52,7 @@ public class BroomBlock extends RotatingTallBlock {
     }
 
     @Override
-    public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
+    public InteractionResult useWithoutItem(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, BlockHitResult pHit) {
         pLevel.setBlockAndUpdate(pPos, pState.setValue(LEANING, !pState.getValue(LEANING)));
         return InteractionResult.SUCCESS;
     }
