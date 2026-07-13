@@ -15,7 +15,7 @@
     }
   },
   "result": {
-    "item": "whimsy_deco:caution_floor_sign",
+    "id": "whimsy_deco:caution_floor_sign",
     "count": 1
   },
   "show_notification": true

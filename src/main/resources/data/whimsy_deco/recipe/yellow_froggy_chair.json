@@ -2,20 +2,20 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    " A ",
-    " S ",
-    "   "
+    "AS ",
+    "AAA",
+    "A A"
   ],
   "key": {
     "A": {
-      "item": "minecraft:white_carpet"
+      "item": "minecraft:bamboo_block"
     },
     "S": {
-      "item": "minecraft:orange_wool"
+      "item": "minecraft:yellow_dye"
     }
   },
   "result": {
-    "id": "whimsy_deco:orange_stocking",
+    "id": "whimsy_deco:yellow_froggy_chair",
     "count": 1
   },
   "show_notification": true

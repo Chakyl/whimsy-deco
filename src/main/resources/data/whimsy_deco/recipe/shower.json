@@ -18,7 +18,7 @@
     }
   },
   "result": {
-    "item": "whimsy_deco:shower",
+    "id": "whimsy_deco:shower",
     "count": 1
   },
   "show_notification": true

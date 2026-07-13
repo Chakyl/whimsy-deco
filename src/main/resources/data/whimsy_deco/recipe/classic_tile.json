@@ -15,7 +15,7 @@
     }
   },
   "result": {
-    "item": "whimsy_deco:classic_tile",
+    "id": "whimsy_deco:classic_tile",
     "count": 1
   },
   "show_notification": true

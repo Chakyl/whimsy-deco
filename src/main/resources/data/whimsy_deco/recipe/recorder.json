@@ -15,7 +15,7 @@
     }
   },
   "result": {
-    "item": "whimsy_deco:recorder",
+    "id": "whimsy_deco:recorder",
     "count": 1
   },
   "show_notification": true

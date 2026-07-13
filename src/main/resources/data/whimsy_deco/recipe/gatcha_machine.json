@@ -24,7 +24,7 @@
     }
   },
   "result": {
-    "item": "whimsy_deco:gatcha_machine",
+    "id": "whimsy_deco:gatcha_machine",
     "count": 1
   },
   "show_notification": true

@@ -8,7 +8,7 @@
   ],
   "key": {
     "A": {
-      "tag": "forge:fences/wooden"
+      "tag": "c:fences/wooden"
     },
     "S": {
       "item": "minecraft:twisting_vines"
@@ -18,7 +18,7 @@
     }
   },
   "result": {
-    "item": "whimsy_deco:warped_rattan_chair",
+    "id": "whimsy_deco:warped_rattan_chair",
     "count": 1
   },
   "show_notification": true

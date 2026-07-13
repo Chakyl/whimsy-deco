@@ -21,7 +21,7 @@
     }
   },
   "result": {
-    "item": "whimsy_deco:paper_lantern",
+    "id": "whimsy_deco:paper_lantern",
     "count": 1
   },
   "show_notification": true

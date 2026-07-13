@@ -18,7 +18,7 @@
     }
   },
   "result": {
-    "item": "whimsy_deco:traffic_cone",
+    "id": "whimsy_deco:traffic_cone",
     "count": 1
   },
   "show_notification": true

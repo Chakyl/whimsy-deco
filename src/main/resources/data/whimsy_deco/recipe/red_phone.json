@@ -10,7 +10,7 @@
     }
   ],
   "result": {
-    "item": "whimsy_deco:red_phone",
+    "id": "whimsy_deco:red_phone",
     "count": 1
   },
   "show_notification": true

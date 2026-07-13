@@ -17,11 +17,11 @@
       "item": "minecraft:redstone"
     },
     "F": {
-      "tag": "forge:stone"
+      "tag": "c:stones"
     }
   },
   "result": {
-    "item": "whimsy_deco:cash_register",
+    "id": "whimsy_deco:cash_register",
     "count": 1
   },
   "show_notification": true

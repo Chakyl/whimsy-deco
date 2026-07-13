@@ -15,7 +15,7 @@
     }
   },
   "result": {
-    "item": "whimsy_deco:dartboard",
+    "id": "whimsy_deco:dartboard",
     "count": 1
   },
   "show_notification": true

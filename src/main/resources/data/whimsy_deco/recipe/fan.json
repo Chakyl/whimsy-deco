@@ -18,7 +18,7 @@
     }
   },
   "result": {
-    "item": "whimsy_deco:fan",
+    "id": "whimsy_deco:fan",
     "count": 1
   },
   "show_notification": true

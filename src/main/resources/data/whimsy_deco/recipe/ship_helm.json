@@ -18,7 +18,7 @@
     }
   },
   "result": {
-    "item": "whimsy_deco:ship_helm",
+    "id": "whimsy_deco:ship_helm",
     "count": 1
   },
   "show_notification": true

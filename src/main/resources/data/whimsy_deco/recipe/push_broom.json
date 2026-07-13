@@ -18,7 +18,7 @@
     }
   },
   "result": {
-    "item": "whimsy_deco:push_broom",
+    "id": "whimsy_deco:push_broom",
     "count": 1
   },
   "show_notification": true

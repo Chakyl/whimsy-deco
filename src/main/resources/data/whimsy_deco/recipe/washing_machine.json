@@ -15,7 +15,7 @@
     }
   },
   "result": {
-    "item": "whimsy_deco:washing_machine",
+    "id": "whimsy_deco:washing_machine",
     "count": 1
   },
   "show_notification": true
