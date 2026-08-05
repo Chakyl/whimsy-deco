@@ -32,7 +32,7 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
 
         generateBlockTagsSoft(WhimsyRegistry.BlockRegistry.BAMBOO_CANDLE);
 
-        generateBlockTags(WhimsyRegistry.BlockRegistry.BATHROOM_RACK);
+        generateBlockTagsWood(WhimsyRegistry.BlockRegistry.BATHROOM_RACK);
 
         generateBlockTags(WhimsyRegistry.BlockRegistry.CAUTION_FLOOR_SIGN);
 
@@ -124,6 +124,7 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
         generateBlockTags(WhimsyRegistry.BlockRegistry.LIGHT_TILE);
 
         generateBlockTags(WhimsyRegistry.BlockRegistry.CAST_IRON_LEDGE);
+        generateBlockTags(WhimsyRegistry.BlockRegistry.CAST_IRON_TRAPDOOR);
         generateBlockTags(WhimsyRegistry.BlockRegistry.BROOM);
         generateBlockTags(WhimsyRegistry.BlockRegistry.PUSH_BROOM);
         generateBlockTags(WhimsyRegistry.BlockRegistry.RECORDER);
@@ -153,6 +154,7 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
     }
 
     public void generateBlockTagsSoft(RegistryObject<Block> block) {
-//        tag(net.minecraft.tags.BlockTags.WOO).add(block.get());
+        tag(BlockTags.MINEABLE_WITH_AXE).add(block.get());
+        tag(BlockTags.MINEABLE_WITH_PICKAXE).add(block.get());
     }
 }
