@@ -1,5 +1,7 @@
 {
   "values": [
+    "whimsy_deco:bamboo_candle",
+    "whimsy_deco:bathroom_rack",
     "whimsy_deco:oak_desk_mirror",
     "whimsy_deco:spruce_desk_mirror",
     "whimsy_deco:dark_oak_desk_mirror",
@@ -14,6 +16,19 @@
     "whimsy_deco:vine_rattan_chair",
     "whimsy_deco:warped_rattan_chair",
     "whimsy_deco:rattan_stool",
-    "whimsy_deco:ship_helm"
+    "whimsy_deco:ship_helm",
+    "whimsy_deco:red_stocking",
+    "whimsy_deco:green_stocking",
+    "whimsy_deco:blue_stocking",
+    "whimsy_deco:orange_stocking",
+    "whimsy_deco:flamingo_swimming_ring",
+    "whimsy_deco:swan_swimming_ring",
+    "whimsy_deco:black_swan_swimming_ring",
+    "whimsy_deco:big_panda_plushie",
+    "whimsy_deco:fufu_plushie",
+    "whimsy_deco:flower_pig_plushie",
+    "whimsy_deco:golden_pig_plushie",
+    "whimsy_deco:vocal_doll",
+    "whimsy_deco:red_vocal_doll"
   ]
 }
